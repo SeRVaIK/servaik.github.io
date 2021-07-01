@@ -129,6 +129,7 @@ html {
 
 .section-clients-item {
     flex: 1 1 33.3%;
+    outline: 3px solid red;
 }
 
 .section-clients-item:not(:last-child) {
@@ -146,5 +147,47 @@ html {
     margin-right: 15px;
     border: 2px solid #3172b9;
     border-radius: 50%;
-    
+}
+
+/* Contacts */
+
+.section-contacts {
+    padding-top: 85px;
+    padding-bottom: 95px;
+}
+
+.section-contact-list {
+    display: flex;
+    margin-top: 43px;
+}
+
+.section-contact-item {
+    flex: 1 1 33.3%;
+}
+
+.section-contacts-info {
+    max-width: 250px;
+}
+
+.section-contact-icon {
+    display: block;
+    height: 23px;
+    margin-bottom: 25px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 100%;
+    background-color: transparent;
+}
+
+.section-contact-icon-gps {
+    background-image: url(/img/gps.svg);
+}
+
+.section-contact-icon-phone {
+    background-image: url(/img/phone.svg);
+}
+
+.section-contact-icon-mail {
+    background-image: url(/img/mail.svg);
+    background-size: auto 19px;
 }
