@@ -1,0 +1,94 @@
+
+.special {
+    display: inline-block;
+}
+
+.reservation {
+    display: inline-block;
+    width: 50%;
+}
+
+.nav-list {
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    width: 1168px;
+    height: 70px;
+}
+
+.lk {
+    width: 155px;
+    background-image: url(/img/keyboard_tab.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: table-cell;
+    margin-left: 20px;
+    vertical-align: middle;
+    text-align: right;
+    text-decoration: none;
+    color: #cc9933;
+}
+
+.header-contact-link {
+    color: #666666;
+    text-decoration: none;
+    font-size: 22px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 270px 0px 0px;
+    text-align: left;
+}
+
+
+.logo {
+    padding: 0 25px 0 0;
+}
+
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 30px 30px 0 80px;
+    display: table;
+  }
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerLight.woff2') format('woff2'),
+		url('../fonts/MullerLight.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerRegular.woff2') format('woff2'),
+		url('../fonts/MullerRegular.woff2') format('woff');
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerBold.woff2') format('woff2'),
+		url('../fonts/MullerBold.woff') format('woff');
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerMedium.woff2') format('woff2'),
+		url('../fonts/MullerMedium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+body {
+    font-family: 'Muller', sans-serif;
+    background-color: #f1f1f1;
+}
