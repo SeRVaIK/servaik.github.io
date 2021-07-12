@@ -5,9 +5,3 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
-.container-header {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
