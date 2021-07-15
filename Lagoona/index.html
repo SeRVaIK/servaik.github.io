@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagoona Hotel</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-container">
             <a href="" class="logo">
-                <img src="/Lagoona/img/Logo.png" alt="Lagoona_Hotel" class="logo-img">
+                <img src="/img/Logo.png" alt="Lagoona_Hotel" class="logo-img">
             </a>
             <a href="tel:+74953225448" class="header-contact-link">
                 +7 495 322 54 48
@@ -20,7 +21,7 @@
             </a>
         </div>
         <div class="container">
-            <nav class="nav">
+            <nav class="nav nav-container">
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="" class="nav-link">О нас</a>
@@ -41,10 +42,11 @@
                         <a href="" class="nav-link">Контакты</a>
                     </li>
                 </ul>
+                <img src="/img/rectangle2.svg" alt="" class="rectangle">
                 <form class="nav-list-searchbar">
                     <input type="search" class="nav-search">
                     <button class="search-button">
-                        
+                        Обратный звонок
                     </button>
                 </form>
             </nav>
@@ -53,7 +55,7 @@
 
     <main>
         <div class="container">
-            <section class="section-reservation">
+            <!-- <section class="section-reservation">
                 <div class="reservation">
                     <form action="URL">
                         <h2 class="heading">
@@ -77,7 +79,7 @@
                         </span>
                     </form>
                 </div>
-            </section>
+            </section> -->
 
             <section class="special-offer-section">
                 <div class="special-offer">
@@ -85,10 +87,27 @@
                         Спецпредложение
                     </h2>
                     <article class="spetial-offer-article">
+                        <img src="/img/Maldiv.jpg" alt="Maldiv.jpg">
+                        <h3 class="maldiv">
+                            Мальдивские острова
+                        </h3>
+                        <span class="special-offer-price">от 55 000 р</span>
+                        <a href="" class="special-offer-details">Подробнее</a>
+                    </article>
+                    <article class="spetial-offer-article">
+                        <img src="/img/Luxe.jpg" alt="Luxe.jpg">
                         <h3 class="luxe">
                             Номера категории люкс
                         </h3>
                         <span class="special-offer-price">от 5 000 р</span>
+                        <a href="" class="special-offer-details">Подробнее</a>
+                    </article>
+                    <article class="spetial-offer-article">
+                        <img src="/img/Krit.jpg" alt="Krit.jpg">
+                        <h3 class="krit">
+                            Горящий тур на остров Крит
+                        </h3>
+                        <span class="special-offer-price">от 30 000 р</span>
                         <a href="" class="special-offer-details">Подробнее</a>
                     </article>
                 </div>
@@ -113,6 +132,7 @@
                 </h2>
                 <ul class="services-list">
                     <li class="services-item">
+                        <img src="/img/10.jpg" alt="picture.jpg" class="servisec-pic">
                         <a href="" class="colored-head">
                             Эксклюзивное обслуживание
                         </a>
@@ -121,6 +141,7 @@
                         </p>
                     </li>
                     <li class="services-item">
+                        <img src="/img/11.jpg" alt="picture.jpg" class="servisec-pic">
                         <a href="" class="colored-head">
                             Аренда банкетных залов
                         </a>
@@ -129,6 +150,7 @@
                         </p>
                     </li>
                     <li class="services-item">
+                        <img src="/img/12.jpg" alt="picture.jpg" class="servisec-pic">
                         <a href="" class="colored-head">
                             Сауны, бассейны, бани, фитнес-залы
                         </a>
@@ -137,6 +159,7 @@
                         </p>
                     </li>
                     <li class="services-item">
+                        <img src="/img/13.jpg" alt="picture.jpg" class="servisec-pic">
                         <a href="" class="colored-head">
                             Охраняемые автомобильные стоянки      
                         </a>
@@ -155,41 +178,49 @@
                 </h2>
                 <ul class="advantages-list">
                     <li class="advantages-item">
+                        <img src="/img/bathtub.svg" alt="bathtub.pic" class="advantages-picture">
                         <p class="common-text">
                             Идейные соображения высшего порядка, а также постоянный количественный рост
                         </p>
                     </li>
-                    <li class="advantages-item-bathtub">
+                    <li class="advantages-item">
+                        <img src="/img/hanger.svg" alt="hanger.pic" class="advantages-picture">
                         <p class="common-text">
                             Значимость этих проблем настолько очевидна, что вопрос остается открытым
                         </p>
                     </li>
-                    <li class="advantages-item-hanger">
+                    <li class="advantages-item">
+                        <img src="/img/heating.svg" alt="heating.pic" class="advantages-picture">
                         <p class="common-text">
                             Таким образом реализация плановых заданий играет важную роль для понимания
                         </p>
                     </li>
-                    <li class="advantages-item-heating">
+                    <li class="advantages-item">
+                        <img src="/img/hotel-key.svg" alt="hotel-key.pic" class="advantages-picture">
                         <p class="common-text">
                             Повседневная практика показывает, что сложившаяся структура организации
                         </p>
                     </li>
-                    <li class="advantages-item-hotelkey">
+                    <li class="advantages-item">
+                        <img src="/img/parking.svg" alt="parking.pic" class="advantages-picture">
                         <p class="common-text">
                             Равным образом рамки и место обучения кадров способствует подготовки сотрудника
                         </p>
                     </li>
-                    <li class="advantages-item-parking">
+                    <li class="advantages-item">
+                        <img src="/img/reception.svg" alt="reception.pic" class="advantages-picture">
                         <p class="common-text">
                             Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса 
                         </p>
                     </li>
-                    <li class="advantages-item-reseption">
+                    <li class="advantages-item">
+                        <img src="/img/security-box.svg" alt="security-box.pic" class="advantages-picture">
                         <p class="common-text">
                             Повседневная практика показывает, что дальнейшее развитие различных форм
                         </p>
                     </li>
-                    <li class="advantages-item-securitybox">
+                    <li class="advantages-item">
+                        <img src="/img/swimming-pool.svg" alt="swimming-pool.pic" class="advantages-picture">
                         <p class="common-text">
                             Значимость этого настолько очевидна, что консультация наших экспертов помогает
                         </p>
@@ -204,8 +235,8 @@
                     Размещение
                 </h2>
                 <ul class="accommodation-list">
-                    <li class="lagoona-espanola">
-                        <img src="/Lagoona/img/1.jpg" alt="Отель">
+                    <li class="accommodation-item">
+                        <img src="/img/1.jpg" alt="Отель">
                         <p class="grey-text">
                             от
                             <span class="price">
@@ -215,11 +246,11 @@
                                 / ночь
                             </span>
                             <span class="accomodation-rating">
-                                <img src="/Lagoona/img/star.png" alt="Рейтинг 4 из 5">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/greystar.png" alt="">
+                                <img src="/img/star.png" alt="Рейтинг 4 из 5">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/greystar.png" alt="">
                             </span>
                         </p>
                         <h3 class="common-text">
@@ -232,8 +263,8 @@
                                 Номера
                         </button>
                     </li>
-                    <li class="lagoona-son-tipicas">
-                        <img src="/Lagoona/img/2.jpg" alt="Отель">
+                    <li class="accommodation-item">
+                        <img src="/img/2.jpg" alt="Отель">
                         <p class="grey-text">
                             от
                             <span class="price">
@@ -243,11 +274,11 @@
                                 / ночь
                             </span>
                             <span class="accomodation-rating">
-                                <img src="/Lagoona/img/star.png" alt="Рейтинг 4 из 5">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/greystar.png" alt="">
+                                <img src="/img/star.png" alt="Рейтинг 4 из 5">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/greystar.png" alt="">
                             </span>
                         </p>
                         <h3 class="common-text">
@@ -260,8 +291,8 @@
                                 Номера
                         </button>
                     </li>
-                    <li class="lagoona-de-la-guerra">
-                        <img src="/Lagoona/img/3.jpg" alt="Отель">
+                    <li class="accommodation-item">
+                        <img src="/img/3.jpg" alt="Отель">
                         <p class="grey-text">
                             от
                             <span class="price">
@@ -271,11 +302,11 @@
                                 / ночь
                             </span>
                             <span class="accomodation-rating">
-                                <img src="/Lagoona/img/star.png" alt="Рейтинг 4 из 5">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/greystar.png" alt="">
+                                <img src="/img/star.png" alt="Рейтинг 4 из 5">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/greystar.png" alt="">
                             </span>
                         </p>
                         <h3 class="common-text">
@@ -288,8 +319,8 @@
                                 Номера
                         </button>
                     </li>
-                    <li class="lagoona-mentira-piadosa">
-                        <img src="/Lagoona/img/4.jpg" alt="Отель">
+                    <li class="accommodation-item">
+                        <img src="/img/4.jpg" alt="Отель">
                         <p class="grey-text">
                             от
                             <span class="price">
@@ -299,11 +330,11 @@
                                 / ночь
                             </span>
                             <span class="accomodation-rating">
-                                <img src="/Lagoona/img/star.png" alt="Рейтинг 4 из 5">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/greystar.png" alt="">
+                                <img src="/img/star.png" alt="Рейтинг 4 из 5">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/greystar.png" alt="">
                             </span>
                         </p>
                         <h3 class="common-text">
@@ -316,8 +347,8 @@
                                 Номера
                         </button>
                     </li>
-                    <li class="lagoona-empujar-la-creatividad">
-                        <img src="/Lagoona/img/5.jpg" alt="Отель">
+                    <li class="accommodation-item">
+                        <img src="/img/5.jpg" alt="Отель">
                         <p class="grey-text">
                             от
                             <span class="price">
@@ -327,11 +358,11 @@
                                 / ночь
                             </span>
                             <span class="accomodation-rating">
-                                <img src="/Lagoona/img/star.png" alt="Рейтинг 4 из 5">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/greystar.png" alt="">
+                                <img src="/img/star.png" alt="Рейтинг 4 из 5">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/greystar.png" alt="">
                             </span>
                         </p>
                         <h3 class="common-text">
@@ -344,8 +375,8 @@
                                 Номера
                         </button>
                     </li>
-                    <li class="lagoona-el-retorno">
-                        <img src="/Lagoona/img/6.jpg" alt="Отель">
+                    <li class="accommodation-item">
+                        <img src="/img/6.jpg" alt="Отель">
                         <p class="grey-text">
                             от
                             <span class="price">
@@ -355,11 +386,11 @@
                                 / ночь
                             </span>
                             <span class="accomodation-rating">
-                                <img src="/Lagoona/img/star.png" alt="Рейтинг 4 из 5">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/greystar.png" alt="">
+                                <img src="/img/star.png" alt="Рейтинг 4 из 5">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/greystar.png" alt="">
                             </span>
                         </p>
                         <h3 class="common-text">
@@ -372,8 +403,8 @@
                                 Номера
                         </button>
                     </li>
-                    <li class="lagoona-enfermo-termino">
-                        <img src="/Lagoona/img/7.jpg" alt="Отель">
+                    <li class="accommodation-item">
+                        <img src="/img/7.jpg" alt="Отель">
                         <p class="grey-text">
                             от
                             <span class="price">
@@ -383,11 +414,11 @@
                                 / ночь
                             </span>
                             <span class="accomodation-rating">
-                                <img src="/Lagoona/img/star.png" alt="Рейтинг 4 из 5">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/greystar.png" alt="">
+                                <img src="/img/star.png" alt="Рейтинг 4 из 5">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/greystar.png" alt="">
                             </span>
                         </p>
                         <h3 class="common-text">
@@ -400,8 +431,8 @@
                                 Номера
                         </button>
                     </li>
-                    <li class="lagoona-suerte-siguio-siempre">
-                        <img src="/Lagoona/img/8.jpg" alt="Отель">
+                    <li class="accommodation-item">
+                        <img src="/img/8.jpg" alt="Отель">
                         <p class="grey-text">
                             от
                             <span class="price">
@@ -411,11 +442,11 @@
                                 / ночь
                             </span>
                             <span class="accomodation-rating">
-                                <img src="/Lagoona/img/star.png" alt="Рейтинг 4 из 5">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/star.png" alt="">
-                                <img src="/Lagoona/img/greystar.png" alt="">
+                                <img src="/img/star.png" alt="Рейтинг 4 из 5">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/star.png" alt="">
+                                <img src="/img/greystar.png" alt="">
                             </span>
                         </p>
                         <h3 class="common-text">
@@ -428,7 +459,8 @@
                                 Номера
                         </button>
                     </li>
-                    <li class="variants">
+                    <li class="accommodation-item">
+                        <img src="/img/41.jpg" alt="Отели">
                         <a href="" class="all-variants">
                             Посмотреть все варианты
                         </a>

@@ -1,4 +1,18 @@
 
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 @font-face {
 	font-family: 'Muller';
 	src: url('../fonts/MullerLight.woff2') format('woff2'),
@@ -38,4 +52,209 @@
 body {
     font-family: 'Muller', sans-serif;
     background-color: #f1f1f1;
+}
+
+/* Header */
+
+.header {
+	height: 154px;
+}
+
+.container {
+	max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+	margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	padding-right: 30px;
+}
+
+.header-contact-link {
+	font-weight: 500;
+	font-size: 20px;
+	color: #666666;
+	padding-right: 551px;
+}
+
+.lk {
+	min-width: 155px;
+	min-height: 24px;
+	background-image: url(/img/lk.svg);
+	background-repeat: no-repeat;
+	text-align: right;
+	color: #CC9933;
+}
+
+.nav {
+	display: block;
+	background-color: #fff;
+	border-radius: 15px;
+	max-width: 1170px;
+	height: 70px;
+}
+.nav-container {
+	display: flex;
+	align-items: center;
+	padding-left: 45px;
+	padding-right: 45px;
+}
+.nav-list {
+    display: flex;
+}
+
+.nav-item{
+    margin-right: 50px;
+}
+
+.rectangle {
+	color: #E1E1E1;
+	height: 50px;
+	
+}
+
+.nav-search {
+	margin-left: 57px;
+	height: 42px;
+	width: 107px;
+	border: 1px solid #CC9933;
+	border-radius: 10px;
+	/* margin-right: 47px; */
+}
+
+.search-button {
+	width: 177px;
+	font-size: 16px;
+	line-height: 16px;
+	height: 42px;
+	background-color: #fff;
+	color: #CC9933;
+	border: 1px solid #CC9933;
+	border-radius: 10px;
+	margin-left: 15px;
+}
+
+/* .special-offer-section {
+	
+	flex-wrap: wrap;
+
+} */
+
+.spetial-offer-article {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.heading {
+	padding-left: 40px;
+	font-size: 40px;
+	font-weight: normal;
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+.darkgrey-text {
+	max-width: 888px;
+	line-height: 200%;
+}
+
+/* Услуги */
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.services-item {
+	background-color: #fff;
+	border-radius: 15px;
+	max-width: 573px;
+	min-height: 330px;
+	margin-bottom: 23px;
+	padding: 0 126px 40px 0;	
+}
+
+.services-item:nth-child(2n) {
+	margin-left: 20px;
+}
+
+.servisec-pic {
+	margin-bottom: 25px;
+}
+
+.colored-head {
+	padding-right: 16px;
+	color: #CC9933;
+	padding-left: 45px;
+	background-image: url(/img/arrow.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.common-text {
+	padding-left: 45px;
+	line-height: 200%;
+}
+
+/* Преимущества */
+
+.advantages-picture {
+	max-width: 66px;
+	max-height: 66px;
+	margin-left: 45px;
+	margin-top: 40px;
+}
+
+.advantages-item {
+	background-color: #fff;
+	border-radius: 15px;
+	max-width: 275px;
+	min-height: 275px;
+	margin-bottom: 23px;
+	padding-right: 42px;
+}
+
+.advantages-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.advantages-item:not(:nth-child(4n)){
+	margin-right: 23px;
+}
+
+/* Размещение */
+
+.accommodation-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.accommodation-item {
+	background-color: #fff;
+	border-radius: 15px;
+	max-width: 374px;
+	min-height: 440px;
+	margin-bottom: 41px;
+	padding-right: 46px;
+}
+
+.accommodation-item:not(:nth-child(3n)) {
+	margin-right: 23px;
+}
+
+.grey-text {
+	color: #999999;
+}
+
+.price {
+	font-style: 20px;
 }
