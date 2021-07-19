@@ -77,10 +77,27 @@ html {
     text-align: center;
 }
 
+.section-heading {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 1.3;
+    font-weight: 300;
+    color: #414141;
+}
+
+.section-description {
+    margin-top: 0;
+    font-style: 16px;
+    line-height: 1.31;
+    color: #787878;
+}
+
 /* Header */
 
 .header {
     height: 110px;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .header-container {
@@ -178,6 +195,7 @@ html {
 .section-do {
     padding-top: 140px;
     padding-bottom: 100px;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .section-description {
@@ -185,23 +203,46 @@ html {
 }
 
 .section-do-list {
-    margin-top: 50px;
     display: flex;
+    margin-top: 50px;
 }
 
 .section-do-item {
     flex: 1 1 25%;
-    outline: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
 }
 
 .section-do-item:not(:last-child) {
     margin-right: 30px;
 }
 
+.section-do-item-heading {
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 1;
+    color: #1c1c1c;
+    font-weight: 600;
+}
+
+.section-do-icon {
+    margin-bottom: 30px;
+}
+
+.section-do-item-description {
+    margin-top: 0;
+    text-align: center;
+}
+
 /* Clients */
 .section-clients {
     padding-top: 90px;
     padding-bottom: 100px;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .section-clients-list {
