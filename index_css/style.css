@@ -43,7 +43,7 @@ ul {
 }
 
 .lionic-logo {
-    background-image: url(../Hotel_Landing/img/logo.svg);
+    background-image: url(/Hotel_Landing/img/logo.svg);
     background-repeat: no-repeat;
     background-position: center right;
 }

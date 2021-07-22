@@ -136,7 +136,7 @@ html {
 /* Hero */
 
 .section-hero {
-    background: url(../img/hero.jpg) right center no-repeat white;
+    background: url(/Hotel_Landing/img/hero.jpg) right center no-repeat white;
     background-size: contain;
 }
 
@@ -186,7 +186,7 @@ html {
     width: 13px;
     height: 17px;
     margin-right: 10px;
-    background: url(../img/ssl.svg) center center no-repeat transparent;
+    background: url(/Hotel_Landing/img/ssl.svg) center center no-repeat transparent;
     background-size: contain;
     transform: translateY(-1px);
 }
@@ -340,15 +340,15 @@ html {
 }
 
 .section-contact-icon-gps {
-    background-image: url(../img/gps.svg);
+    background-image: url(/Hotel_Landing/img/gps.svg);
 }
 
 .section-contact-icon-phone {
-    background-image: url(../img/phone.svg);
+    background-image: url(/Hotel_Landing/img/phone.svg);
 }
 
 .section-contact-icon-mail {
-    background-image: url(../img/mail.svg);
+    background-image: url(/Hotel_Landing/img/mail.svg);
     background-size: auto 19px;
 }
 
@@ -440,18 +440,18 @@ html {
 .footer-social-icon-twitter {
     width: 18px;
     height: 15px;
-    background-image: url(../img/twitter_logo.svg);
+    background-image: url(/Hotel_Landing/img/twitter_logo.svg);
 }
 
 .footer-social-icon-linkedin {
     width: 18px;
     height: 19px;
-    background-image: url(../img/linkedin_logo.svg);
+    background-image: url(/Hotel_Landing/img/linkedin_logo.svg);
     transform: translateY(-2px);
 }
 
 .footer-social-icon-wmail {
     width: 24px;
     height: 18px;
-    background-image: url(../img/wmail.svg);
+    background-image: url(/Hotel_Landing/img/wmail.svg);
 }
