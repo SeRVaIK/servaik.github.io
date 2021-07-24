@@ -94,7 +94,7 @@ body {
 .lk {
 	min-width: 155px;
 	min-height: 24px;
-	background-image: url(/Lagoona/img/lk.svg);
+	background-image: url(../img/lk.svg);
 	background-repeat: no-repeat;
 	text-align: right;
 	color: #CC9933;
@@ -174,19 +174,19 @@ body {
 }
 
 .maldiv-offer {
-	background-image: url(/Lagoona/img/Maldiv.jpg);
+	background-image: url(../img/Maldiv.jpg);
   margin: 0 23px 23px 0;
 }
 
 .krit-offer {
-	background-image: url(/Lagoona/img/Krit.jpg);
+	background-image: url(../img/Krit.jpg);
   margin-right: 23px;
 }
 
 .spetial-offer-luxe {
 	min-width: 573px;
 	min-height: 540px;
-	background-image: url(/Lagoona/img/Luxe.jpg);
+	background-image: url(../img/Luxe.jpg);
 	background-repeat: no-repeat;
 	padding: 208px 234px 40px 40px;
 }
@@ -217,7 +217,7 @@ body {
 
 .small-offers-details {
 	margin-top: 47px;
-	background-image: url(/Lagoona/img/arrow.svg);
+	background-image: url(../img/arrow.svg);
 	background-repeat: no-repeat;
 	background-position: right;
 	max-width: 101px;
@@ -282,7 +282,7 @@ body {
 	padding-right: 16px;
 	color: #CC9933;
 	padding-left: 45px;
-	background-image: url(/Lagoona/img/arrow.svg);
+	background-image: url(../img/arrow.svg);
 	background-repeat: no-repeat;
 	background-position: right;
 }
@@ -379,7 +379,7 @@ body {
 }
 
 .accommodation-img {
-	background-image: url(/Lagoona/img/41.jpg);
+	background-image: url(../img/41.jpg);
 	width: 373px;
 	height: 440px;
 	padding: 373px 53px 27px 54px;
@@ -390,7 +390,7 @@ body {
 	font-weight: 500;
 	padding-right: 16px;
 	color: #fff;
-	background-image: url(/Lagoona/img/whitearrow.svg);
+	background-image: url(../img/whitearrow.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
