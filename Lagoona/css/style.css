@@ -61,15 +61,10 @@ body {
 
 /* Header */
 
-.header {
-	height: 154px;
-}
-
 .container {
 	max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-	margin-top: 30px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -77,10 +72,12 @@ body {
 .header-container {
 	display: flex;
 	align-items: center;
+  margin-bottom: 30px;
+  height: 100%;
 }
 
 .logo {
-	margin-right: 30px;
+	margin-right: 40px;
 }
 
 .header-contact-link {
@@ -92,40 +89,43 @@ body {
 }
 
 .lk {
-	min-width: 155px;
-	min-height: 24px;
-	background-image: url(/Lagoona/img/lk.svg);
+  line-height: 16px;
+	padding-left: 30px;
+	background-image: url(../img/lk.svg);
 	background-repeat: no-repeat;
 	text-align: right;
 	color: #CC9933;
 }
 
 .nav {
-	display: block;
 	background-color: #fff;
 	border-radius: 15px;
 	max-width: 1170px;
   padding: 10px 45px;
+  margin-bottom: 70px;
 }
 
 .nav-container {
 	display: flex;
 	align-items: center;
-	padding-left: 45px;
-	padding-right: 45px;
 }
 
 .nav-list {
     display: flex;
 }
 
-.nav-item{
-    margin-right: 50px;
+.nav-item {
+  max-width: 115px;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 45px;
 }
 
 .rectangle {
+  height: 50px;
 	color: #E1E1E1;
-	height: 50px;
+	margin: 0 56px;
 }
 
 .nav-link {
@@ -133,79 +133,83 @@ body {
 }
 
 .nav-search {
-	margin-left: 57px;
 	height: 42px;
 	width: 107px;
 	border: 1px solid #CC9933;
 	border-radius: 10px;
+  margin-right: 39px;
 }
 
 .search-button {
-	width: 177px;
+  padding: 13px 20px;
 	font-size: 16px;
 	line-height: 16px;
-	height: 42px;
 	background-color: #fff;
 	color: #CC9933;
 	border: 1px solid #CC9933;
 	border-radius: 10px;
-	margin-left: 15px;
+}
+
+.search-button:not(:last-child) {
+  margin-right: 35px;
 }
 
 /* Спецпредложения */
 
+.special-offer-sections {
+	display: flex;
+	justify-content: space-between;
+  flex: 1 1 50%;
+  margin-bottom: 70px;
+}
+
 .heading {
 	padding-left: 40px;
 	font-size: 40px;
+  line-height: 40px;
 	font-weight: normal;
   color: #333333;
-	margin-top: 70px;
+  margin-top: 0;
 	margin-bottom: 20px;
 }
 
 .small-offers {
 	display: flex;
 	flex-direction: column;
+
 }
 
-.special-offer-sections {
-	display: flex;
-	flex-wrap: wrap;
+.special-offer-article {
+  padding: 40px 0 40px 40px;
+	background-repeat: no-repeat;
 }
 
 .maldiv-offer {
-	background-image: url(/Lagoona/img/Maldiv.jpg);
+	background-image: url(../img/Maldiv.jpg);
   margin: 0 23px 23px 0;
 }
 
 .krit-offer {
-	background-image: url(/Lagoona/img/Krit.jpg);
+	background-image: url(../img/Krit.jpg);
   margin-right: 23px;
+  border-radius: 15px;
 }
 
-.spetial-offer-luxe {
-	min-width: 573px;
-	min-height: 540px;
-	background-image: url(/Lagoona/img/Luxe.jpg);
-	background-repeat: no-repeat;
-	padding: 208px 234px 40px 40px;
-}
-
-.spetial-offer-article {
-	min-width: 573px;
-	min-height: 258px;
-  padding: 40px 0 40px 40px;
-	background-repeat: no-repeat;
-	border-radius: 15px;
+.special-offer-luxe {
+  display: flex;
+  flex-direction: column;
+	background-image: url(../img/Luxe.jpg);
+  background-repeat: no-repeat;
+  border-radius: 15px;
+	padding: 0 0 40px 40px;
 }
 
 .small-offers-header {
-	margin: 0;
-	max-width: 299px;
-	min-height: 80px;
+	margin-bottom: 15px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 40px;
+  line-height: 40px;
 	color: #FFFFFF;
 }
 
@@ -213,14 +217,14 @@ body {
 	font-size: 20px;
 	color: #FFFFFF;
 	opacity: 0.8;
+  margin-bottom: 45px;
 }
 
 .small-offers-details {
-	margin-top: 47px;
-	background-image: url(/Lagoona/img/arrow.svg);
+	background-image: url(../img/arrow.svg);
 	background-repeat: no-repeat;
 	background-position: right;
-	max-width: 101px;
+  width: 20%;
 }
 
 .special-offer-details {
@@ -228,15 +232,15 @@ body {
 }
 
 .luxe-header {
-	max-width: 299px;
-	min-height: 180px;
+  display: flex;
+  align-items: flex-end;
+	width: 40%;
 	font-style: normal;
 	font-weight: bold;
 	color: #FFFFFF;
-	margin-top: 0;
-	margin-bottom: 30px;
+	margin: 0 0 15px 0;
 	font-size: 60px;
-  line-height: 1;
+  /* line-height: 1; */
 }
 
 .luxe {
@@ -249,70 +253,150 @@ body {
 
 /* О нас */
 
+.about-us-heading {
+  margin-bottom: 11px;
+}
+
 .darkgrey-text {
+  margin-top: 0;
 	max-width: 888px;
-	line-height: 200%;
+  font-weight: 300;
+  font-size: 16px;
+	line-height: 32px;
 }
 
 /* Услуги */
 
 .services-list {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap:  wrap;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .services-item {
+  flex: 1 1 50%;
+  margin-bottom: 20px;
 	background-color: #fff;
 	border-radius: 15px;
 	max-width: 573px;
 	min-height: 330px;
-	margin-bottom: 23px;
-	padding: 0 126px 40px 0;
+	padding: 190px 126px 40px 45px;
+  background-repeat: no-repeat;
 }
 
-.services-item:nth-child(2n) {
-	margin-left: 20px;
+.servisec-pic10 {
+  background-image: url(/08_layout-stylization/img/10.jpg);
 }
 
-.servisec-pic {
-	margin-bottom: 25px;
+.servisec-pic11 {
+  background-image: url(/08_layout-stylization/img/11.jpg);
+}
+
+.servisec-pic12 {
+  background-image: url(/08_layout-stylization/img/12.jpg);
+}
+
+.servisec-pic13 {
+  background-image: url(/08_layout-stylization/img/13.jpg);
 }
 
 .colored-head {
 	padding-right: 16px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
 	color: #CC9933;
-	padding-left: 45px;
-	background-image: url(/Lagoona/img/arrow.svg);
+	background-image: url(../img/arrow.svg);
 	background-repeat: no-repeat;
 	background-position: right;
 }
 
 .common-text {
-	padding-left: 45px;
-	line-height: 200%;
+  font-size: 16px;
+	line-height: 32px;
+  font-weight: 400;
+  margin: 0;
 }
 
 /* Преимущества */
 
-.advantages-picture {
+.advantages-heading {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* .advantages-picture {
 	max-width: 66px;
 	max-height: 66px;
-	margin-left: 45px;
-	margin-top: 40px;
+  margin-bottom: 10px;
+} */
+
+.bathtub{
+  background-image: url(../img/bathtub.svg);
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 66px;
+}
+.hanger {
+  background-image: url(../img/hanger.svg);
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 66px;
+}
+.heating {
+  background-image: url(../img/heating.svg);
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 66px;
+}
+.hotel-key {
+  background-image: url(../img/hotel-key.svg);
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 66px;
+}
+.parking {
+  background-image: url(../img/parking.svg);
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 66px;
+}
+.reception {
+  background-image: url(../img/reception.svg);
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 66px;
+}
+.security-box {
+  background-image: url(../img/security-box.svg);
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 66px;
+}
+.swimming-pool {
+  background-image: url(../img/swimming-pool.svg);
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 66px;
 }
 
 .advantages-item {
+  flex: 1 1 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 	background-color: #fff;
 	border-radius: 15px;
-	max-width: 275px;
-	min-height: 275px;
 	margin-bottom: 23px;
-	padding-right: 42px;
+	padding: 40px 40px 30px 45px;
+  word-break: break-all;
 }
 
 .advantages-list{
 	display: flex;
-	flex-wrap: wrap;
+  flex-flow: wrap;
+  margin-bottom: 47px;
 }
 
 .advantages-item:not(:nth-child(4n)){
@@ -321,48 +405,83 @@ body {
 
 /* Размещение */
 
+.accommodation-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .accommodation-list {
 	display: flex;
+  flex: 1 1 33.3%;
 	flex-wrap: wrap;
 }
 
+.accommodation-pic {
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+}
+
 .accommodation-item {
-	background-color: #fff;
+  flex: 1 1 32%;
+  background-color: #fff;
 	border-radius: 15px;
-	max-width: 374px;
-	min-height: 440px;
-	margin-bottom: 41px;
-	padding-right: 46px;
+  padding: 255px 45px 40px 45px;
+  margin-bottom: 23px;
+  word-break: break-all;
 }
 
 .accommodation-item:not(:nth-child(3n)) {
 	margin-right: 23px;
 }
 
-.grey-text {
-	color: #999999;
-	margin-left: 45px;
-	margin-bottom: 0;
+.accpic1 {
+  background-image: url(/08_layout-stylization/img/1.jpg);
 
+}
+.accpic2 {
+  background-image: url(/08_layout-stylization/img/2.jpg);
+}
+.accpic3 {
+  background-image: url(/08_layout-stylization/img/3.jpg);
+}
+.accpic4 {
+  background-image: url(/08_layout-stylization/img/4.jpg);
+}
+.accpic5 {
+  background-image: url(/08_layout-stylization/img/5.jpg);
+}
+.accpic6 {
+  background-image: url(/08_layout-stylization/img/6.jpg);
+}
+.accpic7 {
+  background-image: url(/08_layout-stylization/img/7.jpg);
+}
+.accpic8 {
+  background-image: url(/08_layout-stylization/img/8.jpg);
+}
+
+.grey-text {
+  font-size: 16px;
+  line-height: 16px;
+	color: #999999;
+  margin-top: 0;
 }
 
 .price {
 	color: #000;
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .hotel-name {
 	font-size: 16px;
-	margin: 0 40px 16px 45px;
+  line-height: 16px;
 }
 
 .night-text {
+  max-width: 190px;
 	color: black;
-}
-
-.accomodation-rating {
-	margin-left: 45px;
+  margin-right: 45px;
 }
 
 .numbers {
@@ -372,14 +491,12 @@ body {
 	box-sizing: border-box;
 	border-radius: 10px;
 	padding: 13px 20px 13px 20px;
-	margin-left: 45px;
-	margin-top: 20px;
 	background-color: #fff;
 	color: #CC9933;
 }
 
 .accommodation-img {
-	background-image: url(/Lagoona/img/41.jpg);
+	background-image: url(../img/41.jpg);
 	width: 373px;
 	height: 440px;
 	padding: 373px 53px 27px 54px;
@@ -390,7 +507,7 @@ body {
 	font-weight: 500;
 	padding-right: 16px;
 	color: #fff;
-	background-image: url(/Lagoona/img/whitearrow.svg);
-    background-repeat: no-repeat;
-    background-position: right;
+	background-image: url(../img/whitearrow.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
