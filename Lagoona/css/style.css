@@ -65,15 +65,13 @@ body {
 	max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 30px 15px 40px 15px;
 }
 
 .header-container {
 	display: flex;
 	align-items: center;
-  margin-bottom: 30px;
-  height: 100%;
+  padding-bottom: 0;
 }
 
 .logo {
@@ -102,7 +100,6 @@ body {
 	border-radius: 15px;
 	max-width: 1170px;
   padding: 10px 45px;
-  margin-bottom: 70px;
 }
 
 .nav-container {
@@ -156,11 +153,8 @@ body {
 
 /* Спецпредложения */
 
-.special-offer-sections {
-	display: flex;
-	justify-content: space-between;
-  flex: 1 1 50%;
-  margin-bottom: 70px;
+.special-offer-section {
+  display: inline-block;
 }
 
 .heading {
@@ -173,38 +167,42 @@ body {
 	margin-bottom: 20px;
 }
 
-.small-offers {
-	display: flex;
-	flex-direction: column;
+.special-offer-sections {
+  display: flex;
+}
 
+.small-offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 23px;
 }
 
 .special-offer-article {
-  padding: 40px 0 40px 40px;
-	background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 573px;
+  height: 258px;
+  padding: 40px;
 }
 
 .maldiv-offer {
 	background-image: url(../img/Maldiv.jpg);
-  margin: 0 23px 23px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .krit-offer {
 	background-image: url(../img/Krit.jpg);
-  margin-right: 23px;
-  border-radius: 15px;
-}
-
-.special-offer-luxe {
-  display: flex;
-  flex-direction: column;
-	background-image: url(../img/Luxe.jpg);
   background-repeat: no-repeat;
-  border-radius: 15px;
-	padding: 0 0 40px 40px;
+  background-size: contain;
 }
 
 .small-offers-header {
+  width: 60%;
+  margin-top: 0;
+  margin-right: 0;
 	margin-bottom: 15px;
 	font-style: normal;
 	font-weight: bold;
@@ -214,42 +212,86 @@ body {
 }
 
 .special-offer-price {
+  display: inline-block;
 	font-size: 20px;
 	color: #FFFFFF;
 	opacity: 0.8;
   margin-bottom: 45px;
 }
 
-.small-offers-details {
-	background-image: url(../img/arrow.svg);
+.special-offer-details {
+  background-image: url(../img/arrow.svg);
 	background-repeat: no-repeat;
 	background-position: right;
-  width: 20%;
+	color: #FFCC66;
+  padding-right: 14px;
 }
 
-.special-offer-details {
-	color: #FFCC66;
+
+/* Люкс */
+
+.special-offer-luxe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 573px;
+  height: 540px;
+	background-image: url(../img/Luxe.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  padding: 40px;
 }
 
 .luxe-header {
-  display: flex;
-  align-items: flex-end;
+  width: 52%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.special-offer-price {
+  display: inline-block;
+}
+
+/*
+
+.special-offer-article {
+  padding: 40px 0 40px 40px;
+  border-radius: 15px;
+}
+
+.luxe-header {
 	width: 40%;
 	font-style: normal;
 	font-weight: bold;
 	color: #FFFFFF;
 	margin: 0 0 15px 0;
 	font-size: 60px;
-  /* line-height: 1; */
+}
+
+.special-offer-luxe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+	background-image: url(../img/Luxe.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+	padding: 0 0 40px 40px;
 }
 
 .luxe {
 	font-size: 30px;
+  width: 40%;
 }
 
 .special-luxe {
-	margin-top: 37px;
-}
+  display: inline-block;
+} */
 
 /* О нас */
 
@@ -258,7 +300,7 @@ body {
 }
 
 .darkgrey-text {
-  margin-top: 0;
+  margin: 0;
 	max-width: 888px;
   font-weight: 300;
   font-size: 16px;
@@ -276,7 +318,6 @@ body {
 
 .services-item {
   flex: 1 1 50%;
-  margin-bottom: 20px;
 	background-color: #fff;
 	border-radius: 15px;
 	max-width: 573px;
@@ -287,10 +328,12 @@ body {
 
 .servisec-pic10 {
   background-image: url(../img/10.jpg);
+  margin-bottom: 20px;
 }
 
 .servisec-pic11 {
   background-image: url(../img/11.jpg);
+  margin-bottom: 20px;
 }
 
 .servisec-pic12 {
@@ -320,17 +363,6 @@ body {
 }
 
 /* Преимущества */
-
-.advantages-heading {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-/* .advantages-picture {
-	max-width: 66px;
-	max-height: 66px;
-  margin-bottom: 10px;
-} */
 
 .bathtub{
   background-image: url(../img/bathtub.svg);
@@ -394,9 +426,9 @@ body {
 }
 
 .advantages-list{
+  padding-top: 10px;
 	display: flex;
   flex-flow: wrap;
-  margin-bottom: 47px;
 }
 
 .advantages-item:not(:nth-child(4n)){
@@ -417,15 +449,21 @@ body {
 }
 
 .accommodation-pic {
+  display: inline-block;
   margin-bottom: 30px;
   background-repeat: no-repeat;
 }
 
 .accommodation-item {
   flex: 1 1 32%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   background-color: #fff;
 	border-radius: 15px;
-  padding: 255px 45px 40px 45px;
+  padding: 35px 45px 40px 45px;
   margin-bottom: 23px;
   word-break: break-all;
 }
@@ -495,11 +533,13 @@ body {
 	color: #CC9933;
 }
 
+/* Перебрать карточку "Все варианты" слишком большие паддинги,
+прижать к низу флексами */
+
 .accommodation-img {
 	background-image: url(../img/41.jpg);
 	width: 373px;
 	height: 440px;
-	padding: 373px 53px 27px 54px;
 }
 
 .all-variants {
