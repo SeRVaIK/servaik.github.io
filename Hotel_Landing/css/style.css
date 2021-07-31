@@ -134,6 +134,7 @@ html {
 
 .nav-link {
     font-size: 15px;
+    font-weight: 600;
     line-height: 1;
     color: #1c1c1c;
     transition: color .6s ease;
