@@ -133,6 +133,19 @@ html {
     margin-left: 40px;
 }
 
+/* Sale alert */
+
+/* .sale-alert {
+    padding: 25px;
+    outline: 3px solid red;
+}
+
+.sale-alert__heading {
+    margin-bottom: 0.5em;
+    font-size: 24px;
+    font-weight: bold;
+} */
+
 /* Hero */
 
 .section-hero {
@@ -140,16 +153,20 @@ html {
     background-size: contain;
 }
 
-.hero-container {
+.section-hero__sale {
+    margin: 50px 0;
+}
+
+.section-hero__container {
     padding-top: 120px;
     padding-bottom: 130px;
 }
 
-.hero-content {
+.section-hero__content {
     max-width: 44%;
 }
 
-.section-hero-heading {
+.section-hero__heading {
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 40px;
@@ -158,18 +175,22 @@ html {
     color: #1c1c1c;
 }
 
-.section-hero-action {
-    display: inline-block;
-}
-
-.section-hero-description {
-    margin-bottom: 33px;
-    font-size: 16px;
+.section-hero__description {
+    margin-bottom: 60px;
+    font-size: 18px;
     line-height: 25px;
     color: #787878;
 }
 
-.section-hero-btn-description {
+/* .section-hero__description_alert {
+    color: red;
+} */
+
+.section-hero__action {
+    display: inline-block;
+}
+
+.section-hero__btn-description {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,7 +202,7 @@ html {
     color: #787878;
 }
 
-.section-hero-ssl-icon {
+.section-hero__ssl-icon {
     display: inline-block;
     width: 13px;
     height: 17px;
@@ -197,6 +218,11 @@ html {
     padding-bottom: 160px;
     border-bottom: 1px solid #e4e4e4;
 }
+
+/* .section-do__sale {
+    margin: 25px 0;
+    background: rgba(0, 0, 255, .3);
+} */
 
 .section-description {
     margin-top: 25px;
