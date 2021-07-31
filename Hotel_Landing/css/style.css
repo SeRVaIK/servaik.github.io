@@ -522,3 +522,36 @@ html {
     height: 18px;
     background-image: url(../img/wmail.svg);
 }
+
+/* body {
+    min-width: 1200px;
+} */
+
+@media (max-width: 768px) {
+    .section-do-list {
+        display: block;
+    }
+
+    .section-do-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+/* @media (orientation: portrait) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (max-height: 300px) {
+    body {
+        display: none;
+    }
+} */
+
+/* @media print {
+    .section-hero {
+        display: none;
+    }
+} */
