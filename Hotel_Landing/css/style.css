@@ -54,10 +54,6 @@ html {
 
 .container {
     max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .btn {
@@ -140,8 +136,6 @@ html {
     transition: color .6s ease;
 }
 
-
-
 .nav-link:hover {
     color: #3172b9;
 }
@@ -153,19 +147,6 @@ html {
 .header-btn {
     margin-left: 40px;
 }
-
-/* Sale alert */
-
-/* .sale-alert {
-    padding: 25px;
-    outline: 3px solid red;
-}
-
-.sale-alert__heading {
-    margin-bottom: 0.5em;
-    font-size: 24px;
-    font-weight: bold;
-} */
 
 /* Hero */
 
@@ -183,9 +164,9 @@ html {
     padding-bottom: 130px;
 }
 
-.section-hero__content {
+/* .section-hero__content {
     max-width: 44%;
-}
+} */
 
 .section-hero__heading {
     margin-top: 0;
@@ -237,26 +218,19 @@ html {
 
 .section-do {
     padding-top: 140px;
-    padding-bottom: 160px;
+    padding-bottom: 70px;
     border-bottom: 1px solid #e4e4e4;
 }
-
-/* .section-do__sale {
-    margin: 25px 0;
-    background: rgba(0, 0, 255, .3);
-} */
 
 .section-description {
     margin-top: 25px;
 }
 
 .section-do-list {
-    display: flex;
     margin-top: 50px;
 }
 
 .section-do-item {
-    flex: 1 1 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,10 +240,6 @@ html {
     transition-property: background-color, color;
     transition-duration: .6s;
     transition-timing-function: ease;
-}
-
-.section-do-item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .section-do-item:hover {
@@ -320,22 +290,17 @@ html {
     margin-bottom: 45px;
 }
 
-.section-clients-list {
+.section-clients-column {
     display: flex;
 }
 
 .section-clients-item {
-    flex: 1 1 33.3%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 35px 30px;
     border: 1px solid #E4E4E4;
     border-radius: 5px;
-}
-
-.section-clients-item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .section-clients-testimonial {
@@ -384,12 +349,7 @@ html {
 }
 
 .section-contact-list {
-    display: flex;
     margin-top: 43px;
-}
-
-.section-contact-item {
-    flex: 1 1 33.3%;
 }
 
 .section-contacts-info {
