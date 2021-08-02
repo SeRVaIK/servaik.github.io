@@ -66,11 +66,12 @@ html {
     color: white;
     background-color: #3172b9;
     border-radius: 4px;
-    transition: background-color .5s ease;
+    transition: background-color, box-shadow, .5s ease;
     cursor: pointer;
 }
 
 .btn:hover {
+    box-shadow: 0 0 18px rgb(0 0 255 / 60%);
     background-color: blue;
 }
 
