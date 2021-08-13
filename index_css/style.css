@@ -24,6 +24,9 @@ ul {
 .item {
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    border: 5px solid;
+    margin-bottom: 25px;
 }
 
 .btn {
@@ -33,14 +36,12 @@ ul {
     line-height: 1;
     font-weight: 600;
     text-transform: uppercase;
-    border-radius: 10px;
     cursor: pointer;
 }
 
 .lionic-btn {
-    border: 5px solid #3172b9;
+    border-color: #3172b9;
     color: #787878;
-    margin-bottom: 20px;
 }
 
 .lionic-logo {
@@ -50,9 +51,22 @@ ul {
 }
 
 .lagoona-btn {
-    border: 5px solid #CC9933;
+    border-color: #CC9933;
     color: #CC9933;
-    margin-bottom: 20px;
     background-image: url(/Lagoona/img/Слой\ 27\ копия.png);
     background-repeat: no-repeat;
+}
+
+.container__hh {
+    border-color: #BE393B;
+    background-color: #2D3136;
+    padding: 20px 20px;
+}
+
+.hH-btn {
+    color: #D7D7D7;
+    background-size: 30%;
+    background-image: url(../Honey_Hunters/img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
 }
