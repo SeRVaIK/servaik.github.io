@@ -18,37 +18,46 @@ $(document).ready(function() {
     let emailValue = $('input#mailHtml').val();
     let textareaValue = $('textarea#commentHtml').val();
 
-    // console.log(nameValue, emailValue, textareaValue);
-
-    $.ajax({
-      method: "POST",
-      url: "./php/index.php",
-      data: { name: nameValue, mail: emailValue, comment: textareaValue }
-    })
-      .done(function(  ) {
-        // alert( "Data Saved: " + msg );
-      });
-    $('input#nameHtml').val('');
-    $('input#mailHtml').val('');
-    $('textarea#commentHtml').val('');
-
-    async function getResponce() {
-      let responce = await fetch('./php/index.php');
-      let backData = await responce.json();
-      console.log(backData);
-
-      let list = document.querySelector('.comments');
+    let list = document.querySelector('.comments');
 
       list.innerHTML += `
         <li class="col-xl-4 col-lg-5 col-md-5 col-sm-12 comments__card">
-            <div class="comments__name">${backData.name}</div>
-            <div class="comments__email">${backData.email}</div>
-            <div class="comments__text">${backData.textarea}</div>
+            <div class="comments__name">${nameValue}</div>
+            <div class="comments__email">${emailValue}</div>
+            <div class="comments__text">${textareaValue}</div>
         </li>
       `
+    // console.log(nameValue, emailValue, textareaValue);
 
-    }
-    getResponce()
+    // $.ajax({
+    //   method: "POST",
+    //   url: "./php/index.php",
+    //   data: { name: nameValue, mail: emailValue, comment: textareaValue }
+    // })
+    //   .done(function(  ) {
+    //     // alert( "Data Saved: " + msg );
+    //   });
+    // $('input#nameHtml').val('');
+    // $('input#mailHtml').val('');
+    // $('textarea#commentHtml').val('');
+
+    // async function getResponce() {
+    //   let responce = await fetch('./php/index.php');
+    //   let backData = await responce.json();
+    //   console.log(backData);
+
+    //   let list = document.querySelector('.comments');
+
+    //   list.innerHTML += `
+    //     <li class="col-xl-4 col-lg-5 col-md-5 col-sm-12 comments__card">
+    //         <div class="comments__name">${backData.name}</div>
+    //         <div class="comments__email">${backData.email}</div>
+    //         <div class="comments__text">${backData.textarea}</div>
+    //     </li>
+    //   `
+
+    // }
+    // getResponce()
     
 
   })
