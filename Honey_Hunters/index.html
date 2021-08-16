@@ -2,103 +2,98 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
-  <title>hhm_test</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>hh_test</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="container-fluid">
-      <div class="row header__container">
-        <a href="#" class="col-2">
-          <img src="./img/logo.svg" alt="" class="logo">
-        </a>
-      </div>
-      <div class="row">
-        <div class="col header__container-img">
-          <img src="./img/contact_icon.svg" alt="contact-img" class="contact-img">
-        </div>
-      </div>
-      <form action="#" class="js-form">
-        <div class="row forms__container">
-          <div class="col-xl-4 col-lg-4 col-md-12 col-12">
-            <div class="form__label">
-              <label for="nameHtml" class="required">Имя</label>
-              <input type="text" class="input input__name" autocomplete="off" data-validate-field="name" name="name"
-                id="nameHtml" required>
-            </div>
-            <div class="form__label">
-              <label for="mailHtml" class="required">E-mail</label>
-              <input type="email" class="input input__email" autocomplete="off" data-validate-field="email" name="email"
-                id="mailHtml" required>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-5 col-md-12 col-12">
-            <div class="form__label form__label-right">
-              <label for="commentHtml" class="required required-comment">Комментарий</label>
-              <textarea name="textarea" class="input input__textarea" data-validate-field="text" id="commentHtml"></textarea>
-            </div>
-          </div>
-          <div class="row button">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-9 btn-button">
-              <button type="submit" class="btn btn-submit">Записать</button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </header>
-
-  <main class="container main">
-    <div class="row main__comments">
-      <div class="col-12">
-        <h2 class="main__comments-output">Выводим комментарии</h2>
-      </div>
-    </div>
-    <div class="">
-      <ul class="row comments">
-
-      </ul>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="footer__container">
-          <div class="col-md-3 col-4 footer__logo">
-            <a href="#">
-              <img src="./img/logo.svg" alt="HoneyHunters" class="footer__logo-img">
-            </a>
-          </div>
-          <div class="col-md-9 col-2">
-            <ul class="footer__social-list">
-              <li class="footer__social-item">
-                <a href="#" class="footer__social-link">
-                  <span class="footer__social-icon footer__social-icon-vk"></span>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row header__container">
+                <a href="#" class="col-2">
+                    <img src="./img/logo.svg" alt="" class="logo">
                 </a>
-              </li>
-              <li class="footer__social-item">
-                <a href="#" class="footer__social-link">
-                  <span class="footer__social-icon footer__social-icon-fb"></span>
-                </a>
-              </li>
+            </div>
+            <div class="row">
+                <div class="col header__container-img">
+                    <img src="./img/contact_icon.svg" alt="contact-img" class="contact-img">
+                </div>
+            </div>
+            <form action="#" id="form">
+                <div class="row forms__container">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                        <div class="form__label">
+                            <label for="nameHtml" class="required">Имя</label>
+                            <input class="input input__name _req" autocomplete="off" name="name" id="nameHtml">
+                        </div>
+                        <div class="form__label">
+                            <label for="mailHtml" class="required">E-mail</label>
+                            <input class="input _req _email" autocomplete="off" name="mail" id="mailHtml">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-md-12 col-12">
+                        <div class="form__label form__label-right">
+                            <label for="commentHtml" class="required">Комментарий</label>
+                            <textarea name="comment" class="input _req" id="commentHtml"></textarea>
+                        </div>
+                    </div>
+                    <div class="row button">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-9 btn-button">
+                            <button type="submit" class="btn btn-submit">Записать</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main class="container main">
+        <div class="row main__comments">
+            <div class="col-12">
+                <h2 class="main__comments-output">Выводим комментарии</h2>
+            </div>
+        </div>
+        <div class="">
+            <ul class="row comments">
+
             </ul>
-          </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </main>
 
-  <script src="./js/index.js"></script>
-  <script src="./js/just-validate.min.js"></script>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer__container">
+                    <div class="col-md-3 col-4 footer__logo">
+                        <a href="#">
+                            <img src="./img/logo.svg" alt="HoneyHunters" class="footer__logo-img">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-2">
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link">
+                                    <span class="footer__social-icon footer__social-icon-vk"></span>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link">
+                                    <span class="footer__social-icon footer__social-icon-fb"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -14,24 +14,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (error === 0) {
             // alert('Всё хоккей!')
-
+            console.log(formData.textarea);
             form.classList.add('_sending');
 
-            let response = await fetch('./php/index.php', {
-                method: 'POST',
-                body: formData
-            });
+            // let response = await fetch('./php/index.php', {
+            //     method: 'POST',
+            //     body: formData
+            // });
 
-            if (response.ok) {
-                let result = await response.json();
-                // alert(result.message);
-                form.reset();
-                form.classList.remove('_sending');
-                getResponce();
-            } else {
-                alert("Ошибка в передаче данных!");
-                form.classList.remove('_sending');
-            }
+            // if (response.ok) {
+            //     let result = await response.json();
+            //     // alert(result.message);
+            //     form.reset();
+            //     form.classList.remove('_sending');
+            //     getResponce();
+            // } else {
+            //     alert("Ошибка в передаче данных!");
+            //     form.classList.remove('_sending');
+            // }
         } else {
             alert('Заполните обязательные поля!')
             form.classList.remove('_sending');
