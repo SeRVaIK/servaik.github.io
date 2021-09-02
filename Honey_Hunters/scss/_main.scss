@@ -1,0 +1,109 @@
+.main {}
+
+.main__container {
+    max-width: 1052px;
+    @media (min-width: 2500px) {
+        max-width: 2264px;
+    }
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #37414E;
+    margin-bottom: 70px;
+}
+
+@media (min-width:2500px) {
+    h2 {
+        font-size: 86px;
+        margin-bottom: 255px;
+    }
+}
+
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 992px) {
+        justify-content: center;
+    }
+}
+
+.comments__card {
+    max-width: 300px;
+    flex: 1 31%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 360px;
+    margin-bottom: 50px;
+    @media (min-width: 2500px) {
+        max-width: 660px;
+        flex: 1 1 29%;
+        min-height: 815px;
+        margin-bottom: 130px;
+    }
+    @media (max-width: 767px) {
+        max-width: none;
+    }
+}
+
+.comments__card:not(:nth-child(3n)) {
+    margin-right: 30px;
+    @media (min-width: 2500px) {
+        margin-right: 140px;
+    }
+    @media (max-width: 1200px) {
+        margin-right: 10px;
+    }
+    @media (max-width:992px) {
+        margin-right: 0px;
+    }
+}
+
+.comments__card:not(:nth-child(2n)) {
+    @media (max-width: 992px) {
+        margin-right: 10px;
+    }
+    @media (max-width:767px) {
+        margin-right: 0px;
+    }
+}
+
+.comments__card:nth-child(even) .comments__name {
+    background-color: #58AD52;
+}
+
+.comments__name {
+    width: 100%;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    background-color: #4B596C;
+    padding: 20px;
+    @media (min-width: 2500px) {
+        font-size: 68px;
+        padding: 42px;
+    }
+}
+
+.comments__email {
+    height: 50%;
+    color: #6D737B;
+    background: #E9EEF3;
+    padding: 45px 20px 30px;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.comments__card:nth-child(even) .comments__email {
+    color: #58AD52;
+}
+
+.comments__text {
+    height: 50%;
+    color: #6D737B;
+    background: #E9EEF3;
+    padding: 0px 20px 30px;
+}

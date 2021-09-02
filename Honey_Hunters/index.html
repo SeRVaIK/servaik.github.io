@@ -1,99 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>hh_test</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <script await src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Honey Hunters - test task</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row header__container">
-                <a href="#" class="col-2">
-                    <img src="./img/logo.svg" alt="" class="logo">
-                </a>
-            </div>
-            <div class="row">
-                <div class="col header__container-img">
-                    <img src="./img/contact_icon.svg" alt="contact-img" class="contact-img">
-                </div>
-            </div>
-            <form action="#" id="form">
-                <div class="row forms__container">
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-12">
-                        <div class="form__label">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <img src="./img/logo.svg" alt="logo.svg" class="logo">
+                <img src="./img/contact_icon.svg" alt="contact_icon.svg" class="contactIcon">
+                <form action="#" id="form" class="form">
+                    <div class="form__item">
+                        <div class="form__item-left">
                             <label for="nameHtml" class="required">Имя</label>
                             <input class="input input__name _req" autocomplete="off" name="name" id="nameHtml">
-                        </div>
-                        <div class="form__label">
                             <label for="mailHtml" class="required">E-mail</label>
                             <input class="input _req _email" autocomplete="off" name="mail" id="mailHtml">
                         </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-5 col-md-12 col-12">
-                        <div class="form__label form__label-right">
+                        <div class="form__item-right">
                             <label for="commentHtml" class="required">Комментарий</label>
                             <textarea name="comment" class="input _req" id="commentHtml"></textarea>
                         </div>
                     </div>
-                    <div class="row button">
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-9 btn-button">
-                            <button type="submit" class="btn btn-submit">Записать</button>
-                        </div>
+                    <div class="form__btn">
+                        <button type="submit" class="btn btn-submit">Записать</button>
                     </div>
-                </div>
-            </form>
-        </div>
-    </header>
-
-    <main class="container main">
-        <div class="row main__comments">
-            <div class="col-12">
-                <h2 class="main__comments-output">Выводим комментарии</h2>
+                </form>
             </div>
-        </div>
-        <div class="">
-            <ul class="row comments">
+        </header>
 
-            </ul>
-        </div>
-    </main>
+        <main class="main">
+            <div class="main__container">
+                <h2>Выводим комментарии</h2>
+                <ul class="comments">
+                    <li class="comments__card">
+                        <div class="comments__name">${backData.name}</div>
+                        <div class="comments__email">${backData.email}</div>
+                        <div class="comments__text">${backData.textarea}</div>
+                    </li>
+                    <li class="comments__card">
+                        <div class="comments__name">${backData.name}</div>
+                        <div class="comments__email">${backData.email}</div>
+                        <div class="comments__text">${backData.textarea}</div>
+                    </li>
+                    <li class="comments__card">
+                        <div class="comments__name">${backData.name}</div>
+                        <div class="comments__email">${backData.email}</div>
+                        <div class="comments__text">${backData.textarea}</div>
+                    </li>
+                    <li class="comments__card">
+                        <div class="comments__name">${backData.name}</div>
+                        <div class="comments__email">${backData.email}</div>
+                        <div class="comments__text">${backData.textarea}</div>
+                    </li>
+                    <li class="comments__card">
+                        <div class="comments__name">${backData.name}</div>
+                        <div class="comments__email">${backData.email}</div>
+                        <div class="comments__text">${backData.textarea}</div>
+                    </li>
+                    <li class="comments__card">
+                        <div class="comments__name">${backData.name}</div>
+                        <div class="comments__email">${backData.email}</div>
+                        <div class="comments__text">${backData.textarea}</div>
+                    </li>
+                </ul>
+            </div>
+        </main>
 
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="footer__container">
-                    <div class="col-md-3 col-4 footer__logo">
-                        <a href="#">
-                            <img src="./img/logo.svg" alt="HoneyHunters" class="footer__logo-img">
+        <footer class="footer">
+            <div class="footer__container">
+                <img src="./img/logo.svg" alt="logof.svg" class="footer__logo">
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <span class="footer__social-icon footer__social-icon-vk"></span>
                         </a>
-                    </div>
-                    <div class="col-md-9 col-2">
-                        <ul class="footer__social-list">
-                            <li class="footer__social-item">
-                                <a href="#" class="footer__social-link">
-                                    <span class="footer__social-icon footer__social-icon-vk"></span>
-                                </a>
-                            </li>
-                            <li class="footer__social-item">
-                                <a href="#" class="footer__social-link">
-                                    <span class="footer__social-icon footer__social-icon-fb"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <span class="footer__social-icon footer__social-icon-fb"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
     <script src="./js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>

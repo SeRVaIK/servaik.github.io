@@ -1,3 +1,5 @@
+// col-xl-4 col-lg-5 col-md-5 col-sm-12 
+
 "use strict"
 
 // Стандартная проверка того, что документ уже загружен
@@ -7,31 +9,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function formSend(e) {
         e.preventDefault();
-
+        // let error = 0;
         let error = formValidate(form);
 
         let formData = new FormData(form);
 
         if (error === 0) {
-            // alert('Всё хоккей!')
-            console.log(formData.textarea);
+
             form.classList.add('_sending');
 
-            // let response = await fetch('./php/index.php', {
-            //     method: 'POST',
-            //     body: formData
-            // });
+            let response = await fetch('./php/index.php', {
+                method: 'POST',
+                body: formData
+            });
 
-            // if (response.ok) {
-            //     let result = await response.json();
-            //     // alert(result.message);
-            //     form.reset();
-            //     form.classList.remove('_sending');
-            //     getResponce();
-            // } else {
-            //     alert("Ошибка в передаче данных!");
-            //     form.classList.remove('_sending');
-            // }
+            if (response.ok) {
+                let result = await response.json();
+                form.reset();
+                form.classList.remove('_sending');
+                getResponce();
+            } else {
+                alert("Ошибка в передаче данных!");
+                form.classList.remove('_sending');
+            }
         } else {
             alert('Заполните обязательные поля!')
             form.classList.remove('_sending');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let list = document.querySelector('.comments');
 
         list.innerHTML += `
-            <li class="col-xl-4 col-lg-5 col-md-5 col-sm-12 comments__card">
+            <li class="comments__card">
                 <div class="comments__name">${backData.name}</div>
                 <div class="comments__email">${backData.email}</div>
                 <div class="comments__text">${backData.textarea}</div>
