@@ -20,12 +20,6 @@
     .header {
         font-size: 70px;
     }
-    .main {
-        font-size: 68px;
-        .comments__text {
-            font-size: 60px;
-        }
-    }
 }
 
 .header__container,
@@ -54,9 +48,11 @@
 .logo {
     width: 264px;
     height: 54px;
+    margin-bottom: 45px;
     @media (min-width: 2500px) {
         width: 616px;
         height: 126px;
+        margin-bottom: 165px;
     }
 }
 

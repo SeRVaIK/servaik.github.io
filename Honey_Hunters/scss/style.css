@@ -87,12 +87,6 @@ body {
   .header {
     font-size: 70px;
   }
-  .main {
-    font-size: 68px;
-  }
-  .main .comments__text {
-    font-size: 60px;
-  }
 }
 
 .header__container,
@@ -131,12 +125,14 @@ body {
 .logo {
   width: 264px;
   height: 54px;
+  margin-bottom: 45px;
 }
 
 @media (min-width: 2500px) {
   .logo {
     width: 616px;
     height: 126px;
+    margin-bottom: 165px;
   }
 }
 
@@ -317,19 +313,8 @@ h2 {
       flex-wrap: wrap;
 }
 
-@media (max-width: 992px) {
-  .comments {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .comments__card {
-  max-width: 300px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 31%;
-          flex: 1 31%;
+  max-width: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,18 +330,31 @@ h2 {
 @media (min-width: 2500px) {
   .comments__card {
     max-width: 660px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 29%;
-            flex: 1 1 29%;
     min-height: 815px;
     margin-bottom: 130px;
   }
 }
 
+@media (max-width: 1200px) {
+  .comments__card {
+    max-width: 32%;
+  }
+}
+
+@media (max-width: 992px) {
+  .comments__card {
+    min-width: 49%;
+  }
+}
+
 @media (max-width: 767px) {
   .comments__card {
-    max-width: none;
+    min-width: 100%;
   }
+}
+
+.comments__card:last-child {
+  margin-right: auto;
 }
 
 .comments__card:not(:nth-child(3n)) {
@@ -365,13 +363,19 @@ h2 {
 
 @media (min-width: 2500px) {
   .comments__card:not(:nth-child(3n)) {
-    margin-right: 140px;
+    margin-right: 142px;
   }
 }
 
 @media (max-width: 1200px) {
   .comments__card:not(:nth-child(3n)) {
-    margin-right: 10px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .comments__card:not(:nth-child(3n)) {
+    margin-right: 15px;
   }
 }
 
@@ -383,13 +387,13 @@ h2 {
 
 @media (max-width: 992px) {
   .comments__card:not(:nth-child(2n)) {
-    margin-right: 10px;
+    margin-right: 15px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .comments__card:not(:nth-child(2n)) {
-    margin-right: 0px;
+    margin-right: 10px;
   }
 }
 
@@ -414,12 +418,20 @@ h2 {
 }
 
 .comments__email {
-  height: 50%;
   color: #6D737B;
   background: #E9EEF3;
-  padding: 45px 20px 30px;
   font-size: 30px;
   line-height: 35px;
+  padding: 45px 20px 40px;
+  word-wrap: break-word;
+}
+
+@media (min-width: 2500px) {
+  .comments__email {
+    font-size: 68px;
+    padding-top: 95px;
+    padding-bottom: 100px;
+  }
 }
 
 .comments__card:nth-child(even) .comments__email {
@@ -427,10 +439,16 @@ h2 {
 }
 
 .comments__text {
-  height: 50%;
+  height: 100%;
   color: #6D737B;
   background: #E9EEF3;
   padding: 0px 20px 30px;
+}
+
+@media (min-width: 2500px) {
+  .comments__text {
+    font-size: 60px;
+  }
 }
 
 .footer__container {
@@ -470,6 +488,12 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .footer__social-list {
+    display: none;
+  }
 }
 
 .footer__social-icon {

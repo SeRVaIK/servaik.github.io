@@ -1,5 +1,3 @@
-.main {}
-
 .main__container {
     max-width: 1052px;
     @media (min-width: 2500px) {
@@ -25,14 +23,10 @@ h2 {
 .comments {
     display: flex;
     flex-wrap: wrap;
-    @media (max-width: 992px) {
-        justify-content: center;
-    }
 }
 
 .comments__card {
-    max-width: 300px;
-    flex: 1 31%;
+    max-width: 330px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -40,34 +34,46 @@ h2 {
     margin-bottom: 50px;
     @media (min-width: 2500px) {
         max-width: 660px;
-        flex: 1 1 29%;
         min-height: 815px;
         margin-bottom: 130px;
     }
-    @media (max-width: 767px) {
-        max-width: none;
+    @media (max-width: 1200px) {
+        max-width: 32%;
     }
+    @media (max-width: 992px) {
+        min-width: 49%;
+    }
+    @media (max-width: 767px) {
+        min-width: 100%;
+    }
+}
+
+.comments__card:last-child {
+    margin-right: auto;
 }
 
 .comments__card:not(:nth-child(3n)) {
     margin-right: 30px;
     @media (min-width: 2500px) {
-        margin-right: 140px;
+        margin-right: 142px;
     }
     @media (max-width: 1200px) {
-        margin-right: 10px;
+        margin-right: 20px;
     }
-    @media (max-width:992px) {
+    @media (max-width: 1040px) {
+        margin-right: 15px;
+    }
+    @media (max-width: 992px) {
         margin-right: 0px;
     }
 }
 
 .comments__card:not(:nth-child(2n)) {
     @media (max-width: 992px) {
-        margin-right: 10px;
+        margin-right: 15px;
     }
-    @media (max-width:767px) {
-        margin-right: 0px;
+    @media (max-width: 769px) {
+        margin-right: 10px;
     }
 }
 
@@ -89,12 +95,17 @@ h2 {
 }
 
 .comments__email {
-    height: 50%;
     color: #6D737B;
     background: #E9EEF3;
-    padding: 45px 20px 30px;
     font-size: 30px;
     line-height: 35px;
+    padding: 45px 20px 40px;
+    word-wrap: break-word;
+    @media (min-width: 2500px) {
+        font-size: 68px;
+        padding-top: 95px;
+        padding-bottom: 100px;
+    }
 }
 
 .comments__card:nth-child(even) .comments__email {
@@ -102,8 +113,11 @@ h2 {
 }
 
 .comments__text {
-    height: 50%;
+    height: 100%;
     color: #6D737B;
     background: #E9EEF3;
     padding: 0px 20px 30px;
+    @media (min-width: 2500px) {
+        font-size: 60px;
+    }
 }
