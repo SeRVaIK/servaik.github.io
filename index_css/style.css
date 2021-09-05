@@ -45,7 +45,7 @@ ul {
 }
 
 .lionic-logo {
-    background-image: url(/Hotel_Landing/img/logo.svg);
+    background-image: url(../Hotel_Landing/img/logo.svg);
     background-repeat: no-repeat;
     background-position: center right;
 }
@@ -53,7 +53,7 @@ ul {
 .lagoona-btn {
     border-color: #CC9933;
     color: #CC9933;
-    background-image: url(/Lagoona/img/Слой\ 27\ копия.png);
+    background-image: url(../Lagoona/img/Слой\ 27\ копия.png);
     background-repeat: no-repeat;
 }
 
