@@ -54,7 +54,6 @@ body {
   background-color: #f1f1f1;
 }
 
-
 /* Header */
 
 .container {
@@ -146,7 +145,6 @@ body {
   margin-right: 35px;
 }
 
-
 /* Спецпредложения */
 
 .special-offer-section {
@@ -225,7 +223,6 @@ body {
   padding-right: 14px;
 }
 
-
 /* Люкс */
 
 .special-offer-luxe {
@@ -255,7 +252,6 @@ body {
   display: inline-block;
 }
 
-
 /* О нас */
 
 .about-us-heading {
@@ -269,7 +265,6 @@ body {
   font-size: 16px;
   line-height: 32px;
 }
-
 
 /* Услуги */
 
@@ -332,7 +327,6 @@ body {
   font-weight: 400;
   margin: 0;
 }
-
 
 /* Преимущества */
 
@@ -414,7 +408,6 @@ body {
   margin-right: 23px;
 }
 
-
 /* Размещение */
 
 .accommodation-heading {
@@ -489,11 +482,13 @@ body {
   color: #CC9933;
 }
 
-
 /* Перебрать карточку "Все варианты" слишком большие паддинги,
 прижать к низу флексами */
 
 .accommodation-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-image: url(../img/41.jpg);
   background-repeat: no-repeat;
   width: 373px;
@@ -501,6 +496,7 @@ body {
 }
 
 .all-variants {
+  align-self: center;
   font-size: 20px;
   font-weight: 500;
   padding-right: 16px;
@@ -509,7 +505,6 @@ body {
   background-repeat: no-repeat;
   background-position: right;
 }
-
 
 /* Хочу тур */
 
@@ -544,8 +539,7 @@ body {
   line-height: 16px;
 }
 
-.tour-form-select select,
-input {
+.tour-form-select select, input {
   border: none;
 }
 
@@ -563,8 +557,7 @@ input {
   width: 169px;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
 }
 
@@ -577,7 +570,6 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   padding: 13px 30px;
 }
-
 
 /* Contacts */
 
@@ -596,8 +588,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-right: 50px;
 }
 
-.contacts-container-content,
-.contacts-right-gold {
+.contacts-container-content, .contacts-right-gold {
   display: flex;
   flex-direction: column;
 }
@@ -614,9 +605,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 25px;
 }
 
-.contacts-left,
-.contacts-right,
-.contacts-container-left {
+.contacts-left, .contacts-right, .contacts-container-left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -649,7 +638,6 @@ input[type=number]::-webkit-outer-spin-button {
 .contacts-btn {
   padding: 27px 29px;
 }
-
 
 /* Footer */
 
