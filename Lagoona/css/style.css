@@ -93,11 +93,12 @@ body {
 
 .lk {
     line-height: 16px;
-    padding-left: 30px;
-    background-image: url(../img/lk.svg);
-    background-repeat: no-repeat;
-    text-align: right;
     color: var(--font-color);
+}
+
+.lk path {
+    fill: var(--font-color);
+    transition: fill 0.5s ease-in-out;
 }
 
 .nav {
@@ -244,17 +245,19 @@ body {
     transition: transform 0.5s ease;
 }
 
-.services-item:hover svg,
-.special-offer-article:hover svg,
-.special-offer-luxe:hover .special-offer-details svg {
+.services-item:hover:not(:active) svg,
+.special-offer-article:hover:not(:active) svg,
+.special-offer-luxe:hover:not(:active) .special-offer-details svg {
     transform: translateX(14px);
 }
 
+.special-offer-luxe:active a,
 .special-offer-article:active a {
     color: var(--btn-background-color);
 }
 
-.special-offer-article a:focus::after {
+.special-offer-luxe a:focus:not(:active)::after,
+.special-offer-article a:focus:not(:active)::after {
     content: "";
     position: absolute;
     top: -10px;
@@ -278,6 +281,7 @@ body {
     background-size: cover;
     border-radius: 15px;
     padding: 40px;
+    position: relative;
 }
 
 .luxe-header {
@@ -603,10 +607,6 @@ body {
 
 /* Хочу тур */
 
-.tour-heading {
-    /* padding-left: 0px; */
-}
-
 .tour-container {
     border-radius: 15px;
     background-color: #E5E5E5;
@@ -724,11 +724,11 @@ input[type=number]::-webkit-outer-spin-button {
     flex: 1 60%;
 }
 
-.contacts-right-gold-text {
+.contacts-right-gold-text a {
     color: var(--font-color);
 }
 
-.contacts-right-grey-text {
+.contacts-right-grey-text a {
     color: #999999;
 }
 
@@ -738,6 +738,37 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contacts-btn {
     padding: 27px 29px;
+}
+
+.header-contact-link:focus:not(:active),
+.lk:focus:not(:active),
+.contacts-right-gold-text a:focus:not(:active),
+.footer-center-col a:focus:not(:active) {
+    outline: 1px solid var(--font-color);
+    outline-offset: 5px;
+}
+
+.header-contact-link:focus {
+    color: var(--font-color);
+}
+
+.header-contact-link:hover {
+    color: var(--font-color);
+}
+
+.lk:hover,
+.lk:hover path,
+.contacts-right-gold-text a:hover,
+.footer-center-col a:hover {
+    color: #E9C379;
+    fill: #E9C379;
+}
+
+.header-contact-link:active,
+.lk:active,
+.contacts-right-gold-text a:active,
+.footer-center-col a:active {
+    color: var(--active-color);
 }
 
 
@@ -762,7 +793,7 @@ input[type=number]::-webkit-outer-spin-button {
 .header-contact-link,
 .lk,
 .footer-gold-text a {
-    transition: color, border, 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
 }
 
 .footer-row {
@@ -804,15 +835,15 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 20px;
 }
 
-.footer-social-item:hover svg path {
+.footer-social-item:hover path {
     transition: fill 0.5s ease-in-out;
 }
 
-.footer-social-item:hover svg path,
-.footer-social-item:focus svg path {
+.footer-social-item:hover path,
+.footer-social-item:focus path {
     fill: var(--font-color);
 }
 
-.footer-social-item:active svg path {
+.footer-social-item:active path {
     fill: var(--active-color);
 }
