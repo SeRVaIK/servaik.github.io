@@ -207,12 +207,12 @@ body {
 }
 
 .maldiv-offer {
-    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/Maldiv.jpg);
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/Maldiv.webp);
     margin-bottom: 23px;
 }
 
 .krit-offer {
-    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/Krit.jpg);
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/Krit.webp);
 }
 
 .small-offers-header {
@@ -280,7 +280,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     width: calc((100% - 23px) / 2);
-    background-image: url(../img/Luxe.jpg);
+    background-image: url(../img/Luxe.webp);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
@@ -342,21 +342,21 @@ body {
 }
 
 .servisec-pic10 {
-    background-image: url(../img/10.jpg);
+    background-image: url(../img/10.webp);
     margin-bottom: 20px;
 }
 
 .servisec-pic11 {
-    background-image: url(../img/11.jpg);
+    background-image: url(../img/11.webp);
     margin-bottom: 20px;
 }
 
 .servisec-pic12 {
-    background-image: url(../img/12.jpg);
+    background-image: url(../img/12.webp);
 }
 
 .servisec-pic13 {
-    background-image: url(../img/13.jpg);
+    background-image: url(../img/13.webp);
 }
 
 .colored-head {
@@ -582,7 +582,7 @@ body {
 .accommodation-img {
     align-items: center;
     justify-content: flex-end;
-    background-image: url(../img/41.jpg);
+    background-image: url(../img/41.webp);
     background-repeat: no-repeat;
     width: 373px;
     min-height: 440px;
