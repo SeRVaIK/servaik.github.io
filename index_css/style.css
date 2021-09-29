@@ -1,72 +1,156 @@
-* {
+/* Обнуление */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+ul,
+ol,
+li {
     list-style: none;
 }
 
-.container {
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
 }
 
-.item {
+img {
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+/* --------------------------------------MAIN-------------------------------------- */
+
+._container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px 15px 0px 15px;
+}
+
+.card {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
     border: 5px solid;
+    padding: 45px 60px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.card:not(:last-child) {
     margin-bottom: 25px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 45px 60px;
-    font-size: 30px;
-    line-height: 1;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
+.card__text {
+    max-width: 45%;
 }
 
-.lionic-btn {
-    border-color: #3172b9;
-    color: #787878;
+
+/* .card__text:not(:last-child) {
+    margin-bottom: 20px;
+} */
+
+.card__text_in-procces {
+    font-size: 20px;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    opacity: 0.7;
+    outline: 2px solid red;
 }
 
-.lionic-logo {
-    background-image: url(../Hotel_Landing/img/logo.svg);
-    background-repeat: no-repeat;
-    background-position: center right;
-}
 
-.lagoona-btn {
-    border-color: #CC9933;
+/* --------------------------------------LAGOONA-------------------------------------- */
+
+._lagoona,
+._lagoona h2 {
     color: #CC9933;
-    background-image: url(../Lagoona/img/Слой\ 27\ копия.png);
-    background-repeat: no-repeat;
 }
 
-.container__hh {
-    border-color: #BE393B;
+._lagoona {
+    background: url(../Lagoona/img/shadowlogo.svg) 90% 80%/auto no-repeat;
+}
+
+
+/* --------------------------------------LIONIC-------------------------------------- */
+
+._lionic,
+._lionic h2 {
+    color: #3172b9;
+}
+
+._lionic {
+    background: url(../Hotel_Landing/img/logo.svg) 98% 10%/auto no-repeat;
+}
+
+
+/* --------------------------------------hh-------------------------------------- */
+
+._hh,
+._hh h2 {
+    color: #BE393B;
     background-color: #2D3136;
-    padding: 20px 20px;
 }
 
-.hH-btn {
-    color: #D7D7D7;
-    background-size: 30%;
-    background-image: url(../Honey_Hunters/img/logo.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
+._hh {
+    background: url(../Honey_Hunters/img/logo.svg) 98% 10%/120px no-repeat;
+}
+
+
+/* --------------------------------------RELVISE-------------------------------------- */
+
+._relvise {
+    color: #FF7B47;
+}
+
+._relvise h2 {
+    font-family: Montserrat;
+}
+
+
+/* --------------------------------------ADAPTIVE-LAYOUT-------------------------------------- */
+
+@media (max-width:769px) {
+    .card {
+        padding: 25px 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .card__text_in-procces {
+        font-size: 12px;
+    }
 }
