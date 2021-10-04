@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-a {
+.card a {
     text-decoration: none;
     color: #fff;
 }
@@ -68,6 +68,15 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
+}
+
+.card a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .card:not(:last-child) {
