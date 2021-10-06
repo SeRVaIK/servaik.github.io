@@ -171,6 +171,10 @@ body {
     /* Ещё лучше вариант - занести в переменные */
 }
 
+.menu__link:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 479px) {
     .menu__link {
         font-size: 18px;
@@ -326,6 +330,7 @@ footer {}
     line-height: 150%;
     padding: 10px 36px;
     margin: 10px 0;
+    transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 479px) {
@@ -345,9 +350,19 @@ footer {}
     color: #fff;
 }
 
+.main-block__button_orange:hover {
+    background: #fff;
+    color: #FF7B47;
+}
+
 .main-block__button_border {
     color: #0D5C63;
     border: 1px solid #0D5C63;
+}
+
+.main-block__button_border:hover {
+    color: #fff;
+    background-color: #0D5C63;
 }
 
 .main-block__image {
@@ -923,9 +938,15 @@ footer {}
     min-height: 58px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     text-align: center;
     color: #FFFFFF;
+    transition: all 0.3s ease 0s;
     padding: 0px 22px;
+}
+
+.subscribe__button:hover {
+    background: #ca6137;
 }
 
 
@@ -1058,14 +1079,8 @@ footer {}
 
 .contact__container {}
 
-.contact__body {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .contact__content {
-    padding: 0px 20px 0px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 .contact__title {
@@ -1099,4 +1114,166 @@ footer {}
 
 .contact__button:hover {
     background-color: #aa5330;
+}
+
+@media (min-width:767px) {
+    .contact__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact__content {
+        padding: 0px 20px 0px 0px;
+    }
+}
+
+
+/* --------------------------------------FOOTER-------------------------------------- */
+
+.footer {}
+
+.footer__top {
+    background: #17213C;
+    padding: 35px 0;
+    /* Было 50 px - перенёс в footer__column 15 px */
+}
+
+.footer__main {}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.footer__column {
+    padding: 15px 15px;
+    flex: 0 1 16.6667%;
+    min-width: 170px;
+}
+
+.footer__column:last-child {
+    flex: 0 1 33.334%;
+}
+
+@media (max-width:992px) {
+    .footer__column {
+        flex: 0 1 25%;
+    }
+    .footer__column:last-child {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width:700px) {
+    .footer__column {
+        flex: 0 1 50%;
+    }
+}
+
+.footer__label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    margin: 0px 0px 20px 0px;
+}
+
+.footer__menu {}
+
+.menu-footer {}
+
+.menu-footer__list {}
+
+.menu-footer__item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+}
+
+.menu-footer__item:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
+.menu-footer__link {
+    color: #fff;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+}
+
+.menu-footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__contacts {}
+
+.contacts-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-footer__item {
+    padding: 0px 0px 0px 34px;
+    line-height: 142%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    min-height: 30px;
+}
+
+.contacts-footer__item:hover {
+    text-decoration: underline;
+}
+
+.contacts-footer__item:not(:last-child) {
+    margin: 0px 0px 12px 0px;
+}
+
+.contacts-footer__item_phone {
+    background: url("../img/footer/icons/01.svg") 0 0 no-repeat;
+}
+
+.contacts-footer__item_map {
+    background: url("../img/footer/icons/02.svg") 0 0 no-repeat;
+}
+
+.contacts-footer__item_email {
+    background: url("../img/footer/icons/03.svg") 0 0 no-repeat;
+}
+
+.footer__bottom {
+    padding: 25px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copy {
+    color: #737373;
+    line-height: 171%;
+}
+
+.footer__social {}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__item:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+}
+
+@media (max-width: 767px) {
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__copy {
+        margin: 0px 0px 15px 0px;
+        text-align: center;
+    }
 }
