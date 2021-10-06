@@ -205,6 +205,10 @@ body {
 
 .page__subscribe {}
 
+.page__getintouch {}
+
+.page__contact {}
+
 
 /* --------------------------------------HEADER-BLOCK-------------------------------------- */
 
@@ -922,4 +926,177 @@ footer {}
     text-align: center;
     color: #FFFFFF;
     padding: 0px 22px;
+}
+
+
+/* --------------------------------------GETINTOUCH-------------------------------------- */
+
+.getintouch {
+    padding: 80px 0px 135px 0px;
+}
+
+.getintouch__container {}
+
+._container {}
+
+.getintouch__header {
+    margin: 0px 0px 80px 0px;
+}
+
+.getintouch__items {
+    margin: 0 -15px;
+}
+
+.getintouch__item {
+    flex: 0 1 33.333%;
+}
+
+.item-getintouch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px 15px;
+}
+
+.item-getintouch_active {
+    background: #252B42;
+    padding: 80px 15px;
+    color: #fff;
+}
+
+.item-getintouch_active .item-getintouch__button {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.item-getintouch>:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+}
+
+.item-getintouch__icon {}
+
+.item-getintouch__emails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-getintouch__email {
+    color: inherit;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 16px;
+}
+
+.item-getintouch__email:hover {
+    text-decoration: underline;
+}
+
+.item-getintouch__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.item-getintouch__button {
+    border: 1px solid #FF7B47;
+    min-height: 44px;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    color: #FF7B47;
+    line-height: 142%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.item-getintouch__button:hover {
+    border: 1px solid #FF7B47;
+    background-color: #FF7B47;
+    color: #fff;
+}
+
+@media (min-width:992px) {
+    .getintouch__items {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width:992px) {
+    .getintouch {
+        padding: 50px 0px;
+    }
+    .getintouch__header {
+        margin: 0px 0px 50px 0px;
+    }
+    .item-getintouch_active {
+        padding: 50px 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .getintouch__header {
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+
+/* --------------------------------------CONTACT-------------------------------------- */
+
+.contact {
+    background-color: #fff;
+    padding: 42px 0px;
+}
+
+.contact__container {}
+
+.contact__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__content {
+    padding: 0px 20px 0px 0px;
+}
+
+.contact__title {
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    font-size: 24px;
+    line-height: 133%;
+}
+
+.contact__title:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
+.contact__text {
+    color: #737373;
+    line-height: 142%;
+}
+
+.contact__button {
+    display: flex;
+    background-color: #FF7B47;
+    border-radius: 5px;
+    min-height: 58px;
+    padding: 5px 40px;
+    transition: background-color 0.3s ease 0s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.contact__button:hover {
+    background-color: #aa5330;
 }
