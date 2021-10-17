@@ -4,93 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./scss/style.css">
-    <script await src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>Honey Hunters - test task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey.Hunters_test_task</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__container">
-                <img src="./img/logo.svg" alt="logo.svg" class="logo">
-                <img src="./img/contact_icon.svg" alt="contact_icon.svg" class="contactIcon">
-                <form action="#" id="form" class="form">
-                    <div class="form__item">
-                        <div class="form__item-left">
-                            <label for="nameHtml" class="required">Имя</label>
-                            <input class="input input__name _req" autocomplete="off" name="name" id="nameHtml">
-                            <label for="mailHtml" class="required">E-mail</label>
-                            <input class="input _req _email" autocomplete="off" name="mail" id="mailHtml">
-                        </div>
-                        <div class="form__item-right">
-                            <label for="commentHtml" class="required">Комментарий</label>
-                            <textarea name="comment" class="input _req" id="commentHtml"></textarea>
-                        </div>
+            <div class="header__container _container">
+                <div class="header__top">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./img/logo.svg" alt="HoneyHunter.logo">
+                        </a>
                     </div>
-                    <div class="form__btn">
-                        <button type="submit" class="btn btn-submit">Записать</button>
+                    <div class="header__contact-icon">
+                        <img src="./img/contact_icon.svg" alt="contact_icon.svg">
                     </div>
-                </form>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__bottom-form form">
+                        <form action="#" id="form" class="form__body">
+                            <div class="form__item">
+                                <div class="form__column">
+                                    <label for="nameHtml">Имя</label>
+                                    <input type="text" class="input input__name _req" autocomplete="off" name="name" id="nameHtml">
+                                    <label for="mailHtml">E-mail</label>
+                                    <input type="email" class="input input__mail _req _email" autocomplete="off" name="mail" id="mailHtml">
+                                </div>
+                                <div class="form__column">
+                                    <label for="commentHtml">Комментарий</label>
+                                    <textarea name="comment" class="input _req" id="commentHtml"></textarea>
+                                </div>
+                            </div>
+                            <div class="form__btn">
+                                <button type="submit" class="btn btn-submit">Записать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </header>
-
         <main class="main">
-            <div class="main__container">
-                <h2>Выводим комментарии</h2>
-                <ul class="comments">
-                    <li class="comments__card">
-                        <div class="comments__name">${backData.name}</div>
-                        <div class="comments__email">${backData.email}</div>
-                        <div class="comments__text">${backData.textarea}</div>
-                    </li>
-                    <li class="comments__card">
-                        <div class="comments__name">${backData.name}</div>
-                        <div class="comments__email">${backData.email}</div>
-                        <div class="comments__text">${backData.textarea}</div>
-                    </li>
-                    <li class="comments__card">
-                        <div class="comments__name">${backData.name}</div>
-                        <div class="comments__email">${backData.email}</div>
-                        <div class="comments__text">${backData.textarea}</div>
-                    </li>
-                    <li class="comments__card">
-                        <div class="comments__name">${backData.name}</div>
-                        <div class="comments__email">${backData.email}</div>
-                        <div class="comments__text">${backData.textarea}</div>
-                    </li>
-                    <li class="comments__card">
-                        <div class="comments__name">${backData.name}</div>
-                        <div class="comments__email">${backData.email}</div>
-                        <div class="comments__text">${backData.textarea}</div>
-                    </li>
-                    <li class="comments__card">
-                        <div class="comments__name">${backData.name}</div>
-                        <div class="comments__email">${backData.email}</div>
-                        <div class="comments__text">${backData.textarea}</div>
-                    </li>
-                </ul>
-            </div>
+            <section class="main__container _container">
+                <h2 class="main__title">Выводим комментарии</h2>
+                <div class="cards">
+                    <div class="cards__container">
+                        <div class="card__column">
+                            <div class="cards__body">
+                                <div class="cards__title">Вася</div>
+                                <div class="cards__email">vasya@mail.ru</div>
+                                <div class="cards__text">Сообщение от Василия Пупкина.</div>
+                            </div>
+                        </div>
+                        <div class="card__column">
+                            <div class="cards__body">
+                                <div class="cards__title">Маруся</div>
+                                <div class="cards__email">marysia@mail.ru</div>
+                                <div class="cards__text">Всем привет, я Маруся</div>
+                            </div>
+                        </div>
+                        <div class="card__column">
+                            <div class="cards__body">
+                                <div class="cards__title">Вася</div>
+                                <div class="cards__email">vasya@mail.ru</div>
+                                <div class="cards__text">Сообщение от Василия Пупкина.</div>
+                            </div>
+                        </div>
+                        <div class="card__column">
+                            <div class="cards__body">
+                                <div class="cards__title">Маруся</div>
+                                <div class="cards__email">marysia@mail.ru</div>
+                                <div class="cards__text">Всем привет, я Маруся</div>
+                            </div>
+                        </div>
+                        <div class="card__column">
+                            <div class="cards__body">
+                                <div class="cards__title">Вася</div>
+                                <div class="cards__email">vasya@mail.ru</div>
+                                <div class="cards__text">Сообщение от Василия Пупкина.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-
         <footer class="footer">
-            <div class="footer__container">
-                <img src="./img/logo.svg" alt="logof.svg" class="footer__logo">
-                <ul class="footer__social-list">
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
-                            <span class="footer__social-icon footer__social-icon-vk"></span>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
-                            <span class="footer__social-icon footer__social-icon-fb"></span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer__container _container">
+                <div class="footer__body">
+                    <a href="#" class="footer__logo">
+                        <img src="./img/footer_logo.svg" alt="logof.svg" class="footer__logo">
+                    </a>
+                    <div class="footer__social-list">
+                        <div class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <span class="footer__social-icon footer__social-icon-vk"></span>
+                            </a>
+                        </div>
+                        <div class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <span class="footer__social-icon footer__social-icon-fb"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
