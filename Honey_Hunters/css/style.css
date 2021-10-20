@@ -418,13 +418,13 @@ textarea {
     }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 540px) {
     .card__column {
         flex: 0 1 100%;
     }
 }
 
-@media (min-width: 477px) {
+@media (min-width: 420px) {
     .card__column {
         padding: 0 15px;
     }
