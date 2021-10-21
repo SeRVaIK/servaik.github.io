@@ -398,6 +398,7 @@ textarea {
     font-size: 26px;
     line-height: 116%;
     padding: 0px 20px 30px;
+    word-break: break-word;
 }
 
 @media (min-width:1500px) {
