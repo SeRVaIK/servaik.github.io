@@ -68,6 +68,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
+    z-index: 2;
 }
 
 .card a::before {
@@ -146,10 +147,42 @@ body {
 /* --------------------------------------RELVISE-------------------------------------- */
 
 ._relvise {
-    color: #FF7B47;
+    color: #0d5c63;
 }
 
 ._relvise h2 {
+    font-family: Montserrat;
+}
+
+
+/* --------------------------------------EVKLID-------------------------------------- */
+
+._evklid {
+    position: relative;
+    color: #E1670E;
+    background-color: rgb(53, 53, 53);
+}
+
+._evklid::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 14px;
+    width: 39px;
+    height: 72px;
+    background: url(../Evklid/img/footer/footer_logo.png) 0 0/contain no-repeat;
+    transform: rotate(-90deg);
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+}
+
+._evklid:hover::before {
+    left: -50px;
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+._evklid h2 {
     font-family: Montserrat;
 }
 
