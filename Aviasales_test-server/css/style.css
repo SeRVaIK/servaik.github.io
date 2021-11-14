@@ -22,14 +22,10 @@ body {
     height: 100%;
     line-height: 1;
     font-size: 12px;
-    /* background-color: #333333; */
     background-color: #F3F7FA;
     color: #4A4A4A;
     font-family: "Open sans";
-}
-
-body._lock {
-    overflow: hidden;
+    user-select: none;
 }
 
 .wrapper {
@@ -49,7 +45,11 @@ body._lock {
     margin: 0px auto;
 }
 
-.page {}
+.page {
+    /* margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box; */
+}
 
 ._shadow {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -62,6 +62,9 @@ body._lock {
 .header {}
 
 .header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 40px 0px 29px 0px;
     text-align: center;
 }
@@ -72,6 +75,20 @@ body._lock {
 .page__container {
     display: flex;
     align-items: flex-start;
+}
+
+@media (max-width: 800px) {
+    .page__container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page__container {
+        padding: 0px 0px;
+    }
 }
 
 
@@ -150,7 +167,7 @@ body._lock {
     left: 24px;
     width: 12px;
     height: 8px;
-    background: url(../img/shape.svg) no-repeat;
+    background: url(../img/Shape.svg) no-repeat;
     opacity: 0;
     transition: opacity 0.4s ease 0s;
 }
@@ -165,13 +182,22 @@ body._lock {
     line-height: 154%;
 }
 
+@media (max-width: 800px) {
+    .filter {
+        margin: 0px auto 30px;
+    }
+}
 
-/* ---------------------------------------------TIKETS--------------------------------------------- */
 
-.resolver {}
+/* ---------------------------------------------TICKETS--------------------------------------------- */
+
+.resolver {
+    padding-bottom: 50px;
+    width: 100%;
+}
 
 .resolver__container {
-    min-width: 502px;
+    max-width: 502px;
 }
 
 .resolver__tabs {
@@ -204,23 +230,28 @@ body._lock {
     background-color: #F1FCFF;
 }
 
-.tabs__button:active {
+._active {
     color: #FFFFFF;
     background-color: #2196F3;
     border-color: #2196F3;
     z-index: 2;
 }
 
+._active:hover {
+    color: #2196F3;
+    background-color: #bbe6f1
+}
+
 .tabs__button:hover {}
 
-.tikets__container {}
+.tickets__container {}
 
-.tiket {
+.ticket {
     padding: 20px;
     margin-bottom: 20px;
 }
 
-.tiket__header {
+.ticket__header {
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
@@ -230,7 +261,7 @@ body._lock {
     position: relative;
 }
 
-.tiket__header img {
+.ticket__header img {
     position: absolute;
     width: 110px;
     height: 36px;
@@ -238,38 +269,41 @@ body._lock {
     top: 0;
 }
 
-.tiket__value {}
+.ticket__value {}
 
-.tiket__current-value {}
+.ticket__current-value {}
 
-.tiket__row {
+.ticket__row {
     display: flex;
     justify-content: space-between;
 }
 
-.tiket__row:not(:last-child) {
+.ticket__row:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.tiket__collumn {
+.ticket__collumn {
     flex: 0 0 141px;
+}
+
+.ticket__collumn:not(:last-child) {
     margin-right: 20px;
 }
 
-.tiket__collumn_top,
-.tiket__collumn_bottom {
+.ticket__collumn_top,
+.ticket__collumn_bottom {
     font-weight: 600;
     line-height: 150%;
 }
 
-.tiket__collumn_top {
+.ticket__collumn_top {
     font-size: 12px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: #A0B0B9;
 }
 
-.tiket__collumn_bottom {
+.ticket__collumn_bottom {
     font-size: 14px;
     color: #4A4A4A;
 }
@@ -288,4 +322,51 @@ body._lock {
 
 .show-more:hover {
     background: #4898da;
+}
+
+@media (max-width: 550px) {
+    .ticket__collumn {
+        flex: 1 1 33.333%;
+    }
+    .ticket__collumn:not(:last-child) {
+        margin-right: 12px;
+    }
+    .ticket__collumn:nth-child(2) {
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .ticket {
+        padding: 5px;
+    }
+    .ticket__collumn_top {
+        letter-spacing: 0px;
+    }
+    .ticket__collumn_bottom {
+        font-size: 12px;
+    }
+}
+
+
+/* ---------------------------------------------ERROR-MESSAGE--------------------------------------------- */
+
+.error-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-message__text {
+    padding: 50px 5px 5px 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 200%;
+    margin-bottom: 40px;
+}
+
+.error-message__btn {
+    color: #fff;
 }
