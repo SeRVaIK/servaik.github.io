@@ -158,7 +158,6 @@ body {
 /* --------------------------------------EVKLID-------------------------------------- */
 
 ._evklid {
-    position: relative;
     color: #E1670E;
     background-color: rgb(53, 53, 53);
 }
@@ -187,6 +186,50 @@ body {
 }
 
 
+/* --------------------------------------AVIASALES-------------------------------------- */
+
+@keyframes movingAround {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+._aviasales_test {
+    color: #2196F3;
+}
+
+._aviasales_test h2 {
+    color: #A0B0B9;
+}
+
+._aviasales_test::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 82px;
+    height: 89px;
+    background: url(../Aviasales_test-server/img/form.png) 0 0/contain no-repeat;
+}
+
+._aviasales_test::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    right: 25px;
+    width: 50px;
+    height: 51px;
+    background: url(../Aviasales_test-server/img/plane.png) 0 0/contain no-repeat;
+    animation: movingAround 3s infinite linear;
+    transform-origin: -15px -15px;
+}
+
+
+/* ._aviasales_test:hover::after {
+    right: 26%;
+} */
+
+
 /* --------------------------------------ADAPTIVE-LAYOUT-------------------------------------- */
 
 @media (max-width:769px) {
@@ -197,5 +240,14 @@ body {
     }
     .card__text_in-procces {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    ._aviasales_test::before {
+        right: 0px;
+    }
+    ._aviasales_test::after {
+        right: -25px;
     }
 }
