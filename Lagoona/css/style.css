@@ -522,6 +522,12 @@ body {
     word-break: break-all;
 }
 
+.accommodation-item>img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
 .accommodation-item:not(:nth-child(3n)) {
     margin-right: 23px;
 }
