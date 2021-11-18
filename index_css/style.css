@@ -94,11 +94,11 @@ body {
 } */
 
 .card__text_in-procces {
-    font-size: 20px;
+    font-size: 25px;
     transform: rotate(-15deg);
     position: absolute;
-    top: 50%;
-    left: 25%;
+    top: 68%;
+    right: 3%;
     opacity: 0.7;
     outline: 2px solid red;
 }
