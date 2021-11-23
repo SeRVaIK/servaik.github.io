@@ -69,13 +69,30 @@ if (tabsLinks.length > 0) {
 }
 
 // Открывающиеся спойлеры
-const spoilerTitles = document.querySelectorAll('.spoiler__item');
+const spoilers = document.querySelectorAll('.spoiler__item');
 
-spoilerTitles.forEach((spoiler) => {
+spoilers.forEach((spoiler) => {
     spoiler.addEventListener('click', (e) => {
-        let currentTextField = e.currentTarget.querySelector('.spoiler__text');
+        e.preventDefault();
 
-        spoiler.classList.toggle('_active_spoiler');
-        currentTextField.classList.toggle('_active_spoiler');
+        currText = e.currentTarget.querySelector('.spoiler__text');
+
+        if (!spoiler.classList.contains('_active_spoiler')) {
+
+            spoiler.classList.add('_active_spoiler');
+            currText.style.height = 'auto';
+
+            let height = currText.clientHeight + 'px';
+
+            currText.style.height = '0px';
+
+            setTimeout(() => {
+                currText.style.height = height;
+            }, 0);
+        } else {
+            currText.style.height = '0px';
+
+            spoiler.classList.remove('_active_spoiler');
+        }
     });
 });
