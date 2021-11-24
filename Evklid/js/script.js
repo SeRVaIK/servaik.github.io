@@ -96,3 +96,26 @@ spoilers.forEach((spoiler) => {
         }
     });
 });
+
+// Выплывающий поиск
+const form = document.querySelector('.search__container');
+
+document.querySelector('.header__container').addEventListener('click', () => {
+    form.classList.add('_open__search');
+    document.querySelector('.search__icon').classList.add('_open__search');
+});
+
+document.addEventListener('click', (e) => {
+    let target = e.target;
+    let input = form.querySelector("input");
+    if (!target.closest('.search')) {
+        form.classList.remove('_open__search');
+        document.querySelector('.search__icon').classList.remove('_open__search');
+        input.value = "Что будем искать?";
+        console.log(target);
+    }
+    if (target.closest('.search__clearer') || target == input) {
+        input.value = "";
+        input.focus();
+    }
+});
