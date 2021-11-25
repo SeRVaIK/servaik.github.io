@@ -14,10 +14,17 @@ const swiper = new Swiper('.hero__swiper-body', {
 const menuBody = document.querySelector('.menu');
 const iconBurger = document.querySelector('.header__burger');
 
-iconBurger.addEventListener('click', () => {
+iconBurger.addEventListener('click', (e) => {
     if (iconBurger) {
         iconBurger.classList.toggle('_active_burger');
         menuBody.classList.toggle('_active_burger');
+    }
+});
+
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.menu') && !e.target.closest('.header__burger')) {
+        iconBurger.classList.remove('_active_burger');
+        menuBody.classList.remove('_active_burger');
     }
 });
 
@@ -99,22 +106,24 @@ spoilers.forEach((spoiler) => {
 
 // Выплывающий поиск
 const form = document.querySelector('.search__container');
+const search = document.querySelector('.search__icon');
 
-document.querySelector('.header__container').addEventListener('click', () => {
+search.addEventListener('click', () => {
     form.classList.add('_open__search');
-    document.querySelector('.search__icon').classList.add('_open__search');
+    search.classList.add('_open__search');
 });
 
-document.addEventListener('click', (e) => {
+form.addEventListener('click', (e) => {
     let target = e.target;
-    let input = form.querySelector("input");
-    if (!target.closest('.search')) {
+    console.log(target);
+    let input = form.querySelector(".search__input");
+    if (target.closest('.search__clearer')) {
+        e.preventDefault();
         form.classList.remove('_open__search');
         document.querySelector('.search__icon').classList.remove('_open__search');
         input.value = "Что будем искать?";
-        console.log(target);
     }
-    if (target.closest('.search__clearer') || target == input) {
+    if (target == input) {
         input.value = "";
         input.focus();
     }

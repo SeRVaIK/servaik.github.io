@@ -49,25 +49,31 @@
                             <li class="menu__item">
                                 <a href="" class="menu__link">Контакты</a>
                             </li>
-
                         </ul>
                     </nav>
                     <div class="header__search search">
-                        <form class="search__container">
+                        <form action="submit" class="search__container">
+                            <span>Строка поиска</span>
                             <input type="search" value="Что будем искать?" class="search__input">
-                            <button>
+                            <button type="submit" class="search__submit">
                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
                                 <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
                               </svg>
                             </button>
-                            <button class="search__clearer"></button>
+                            <button class="search__clearer">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
+                                <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
+                                <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"/>
+                              </svg>
+                            </button>
                         </form>
-                        <button class="search__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="search__icon"><span>Кнопка открытия поиска</span>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
                             <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
-                        </svg>
+                          </svg>
                         </button>
                     </div>
                 </div>
@@ -79,9 +85,9 @@
                     <div class="hero__body">
                         <h1 class="hero__title">Проектные решения любой сложности</h1>
                         <p class="hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
-                        <div class="hero__button">
+                        <button class="hero__button">
                             <a href="" class="hero__btn btn">Заказать расчёт</a>
-                        </div>
+                        </button>
                     </div>
                     <div class="swiper hero__swiper-body">
                         <div class="swiper-wrapper hero__swiper-wrapper">
@@ -103,7 +109,6 @@
                 <div class="_container">
                     <div class="about__container">
                         <div class="about__header header-about">
-
                             <h2 class="header-about__title  title">О нас</h2>
                             <p class="header-about__text text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы
                                 связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует
@@ -116,9 +121,9 @@
                                 <div class="about__description description-about">
                                     <div class="description-about__content">
                                         <p class="description-about__text">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
-                                        <div class="description-about__button">
+                                        <button class="description-about__button">
                                             <a href="" class="description-about__btn">Подробнее</a>
-                                        </div>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -165,8 +170,12 @@
                                         с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности
                                         картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
                                     <div class="tabs__buttons">
-                                        <a href="" class="tabs__button btn tabs__button_orange">Подробнее</a>
-                                        <a href="" class="tabs__button btn tabs__button_border">Договор</a>
+                                        <button class="tabs__button btn tabs__button_orange">
+                                          <a href="">Подробнее</a>
+                                        </button>
+                                        <button class="tabs__button btn tabs__button_border">
+                                          <a href="">Договор</a>
+                                        </button>
                                     </div>
                                 </div>
                                 <div id="tab_02" class="tabs__content">
@@ -176,8 +185,12 @@
                                         современные исследования подвергнуты целой серии независимых исследований.
                                     </p>
                                     <div class="tabs__buttons">
-                                        <a href="" class="tabs__button btn tabs__button_orange">Подробнее</a>
-                                        <a href="" class="tabs__button btn tabs__button_border">Договор</a>
+                                        <button class="tabs__button btn tabs__button_orange">
+                                          <a href="">Подробнее</a>
+                                        </button>
+                                        <button class="tabs__button btn tabs__button_border">
+                                          <a href="">Договор</a>
+                                        </button>
                                     </div>
                                 </div>
                                 <div id="tab_03" class="tabs__content">
@@ -187,8 +200,12 @@
                                         говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке
                                         прогресса профессионального сообщества.</p>
                                     <div class="tabs__buttons">
-                                        <a href="" class="tabs__button btn tabs__button_orange">Подробнее</a>
-                                        <a href="" class="tabs__button btn tabs__button_border">Договор</a>
+                                        <button class="tabs__button btn tabs__button_orange">
+                                          <a href="">Подробнее</a>
+                                        </button>
+                                        <button class="tabs__button btn tabs__button_border">
+                                          <a href="">Договор</a>
+                                        </button>
                                     </div>
                                 </div>
                                 <div id="tab_04" class="tabs__content">
@@ -197,8 +214,12 @@
                                         и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение
                                         нашей деятельности позволяет.</p>
                                     <div class="tabs__buttons">
-                                        <a href="" class="tabs__button btn tabs__button_orange">Подробнее</a>
-                                        <a href="" class="tabs__button btn tabs__button_border">Договор</a>
+                                        <button class="tabs__button btn tabs__button_orange">
+                                          <a href="">Подробнее</a>
+                                        </button>
+                                        <button class="tabs__button btn tabs__button_border">
+                                          <a href="">Договор</a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
