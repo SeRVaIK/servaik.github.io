@@ -87,6 +87,7 @@ spoilers.forEach((spoiler) => {
         if (!spoiler.classList.contains('_active_spoiler')) {
 
             spoiler.classList.add('_active_spoiler');
+
             currText.style.height = 'auto';
 
             let height = currText.clientHeight + 'px';
@@ -120,7 +121,7 @@ form.addEventListener('click', (e) => {
     if (target.closest('.search__clearer')) {
         e.preventDefault();
         form.classList.remove('_open__search');
-        document.querySelector('.search__icon').classList.remove('_open__search');
+        search.classList.remove('_open__search');
         input.value = "Что будем искать?";
     }
     if (target == input) {
